@@ -1,0 +1,15 @@
+# Arquivos de ambiente
+.env
+
+# Logs
+*.log
+
+# Cache e arquivos de sistema
+.cache/
+__pycache__/
+.DS_Store
+Thumbs.db
+
+# Arquivos de IDE
+.vscode/
+.idea/
