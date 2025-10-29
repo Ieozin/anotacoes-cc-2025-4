@@ -19,7 +19,7 @@
 ### 01 - Matemática e Lógica
 * [x] Tema 1: Introdução *(Concluído em 16/10)*
 * [x] Tema 2: Teoria Dos Conjuntos e Princípios de Contagem *(Concluído em 24/10)*
-* [ ] Tema 3: Gráficos e Interpretações Gráficas
+* [x] Tema 3: Gráficos e Interpretações Gráficas *(Concluído em 29/10)*
 * [ ] Tema 4: Aprofundamento de Funções
 * [ ] Tema 5: Cálculo Proposicional
 * [ ] Tema 6: Cálculo de Predicados
