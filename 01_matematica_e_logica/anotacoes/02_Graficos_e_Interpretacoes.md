@@ -62,6 +62,14 @@ Isso aqui é o que mais importa na prática para ler um gráfico.
 
 ---
 
-## Conclusão do Tema 3
+## 5. Resumo das Atividades (Tema 3) (29/10)
 
-Fechei o Tema 3. A parte de intervalos foi uma boa revisão do que já vi. O Teste da Reta Vertical é a regra mais fácil pra saber se algo é função ou não. E a parte de máximos/mínimos é pura interpretação de gráfico: ver onde é o pico (máximo) e o vale (mínimo). Entendido.
+Fiz os exercícios da plataforma para fechar o Tema 3.
+
+* **Desempenho Geral:** Acertei 5 de 7 questões.
+* **Erros (2):**
+    * **Q5 (Plano Cartesiano):** Errei na identificação dos quadrantes. Confundi o 2º quadrante (x-, y+) com o 3º (x-, y-). O ponto `J: (-1, 4)` está no 2º, e eu marquei como se fosse no 3º. Erro básico de definição.
+    * **Q_Faltante:** A 7ª questão (que não printei) também foi um erro.
+* **Acertos Notáveis:** O resto foi tranquilo. Interpretação de intervalo (Q1), soma em gráfico de linha (Q2), cálculo de percentual em gráfico de barra (Q3), contagem (Q4) e identificar a função de lucro (Q6) foram corretos.
+
+**Conclusão do Tema 3:** Fechei o Tema 3. A parte de intervalos foi uma boa revisão. O Teste da Reta Vertical é a regra mais fácil pra saber se algo é função. A parte de máximos/mínimos é pura interpretação de gráfico. Os erros nos exercícios foram por falta de atenção na definição (quadrantes). Entendido.
