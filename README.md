@@ -20,7 +20,7 @@
 * [x] Tema 1: Introdução *(Concluído em 16/10)*
 * [x] Tema 2: Teoria Dos Conjuntos e Princípios de Contagem *(Concluído em 24/10)*
 * [x] Tema 3: Gráficos e Interpretações Gráficas *(Concluído em 29/10)*
-* [ ] Tema 4: Aprofundamento de Funções
+* [ ] Tema 4: Aprofundamento de Funções *(Iniciado em 30/10)*
 * [ ] Tema 5: Cálculo Proposicional
 * [ ] Tema 6: Cálculo de Predicados
 * [ ] Tema 7: Métodos de Demonstração
