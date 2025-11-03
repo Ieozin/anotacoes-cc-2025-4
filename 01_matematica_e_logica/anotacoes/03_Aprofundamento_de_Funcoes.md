@@ -1,5 +1,5 @@
-# Tema 4: Aprofundamento de Funções (Parte 1)
-**Data:** 30/10/2025
+# Tema 4: Aprofundamento de Funções
+**Data:** 30/10/2025 - 03/11/2025
 
 ## 1. Conceito de Função (Revisão)
 
@@ -24,6 +24,8 @@ O domínio nem sempre é "todos os reais" (`R`). Tenho que olhar a fórmula da f
 * **Domínio (1/x):** `D = {x ∈ R | x ≠ 0}` ou `R*`. O gráfico "salta" o eixo Y.
 * **Exercício (Q2 Lucro):** `L(x) = 1 / (x+2)`.
     * Restrição: `x+2 ≠ 0` => `x ≠ -2`. Domínio: `R - {-2}`. (Ok).
+* **Exercício (Verif. Q2):** `f(x) = 120x / (300-x)`.
+    * Restrição: `300 - x ≠ 0` => `x ≠ 300`. Domínio: `R - {300}`. (Ok).
 
 ### Restrição 2: Raiz Quadrada (Radiciando)
 * **Exemplo:** `f(x) = sqrt(x)`.
@@ -66,8 +68,18 @@ A Imagem é o conjunto de todos os valores de "saída" (`y`) que a função pode
     * **Conclusão:** A Imagem é `Im = {y ∈ R | y ≥ 0}`.
 
 ### Método 3: Projeção no Gráfico
-* **Domínio:** "Amassar" (projetar) o gráfico no **eixo X** (horizontal). Onde o gráfico "deixar uma sombra" é o domínio.
-* **Imagem:** "Amassar" (projetar) o gráfico no **eixo Y** (vertical). Onde "deixar sombra" é a imagem.
+* **Domínio:** "Amassar" (projetar) o gráfico no **eixo X** (horizontal). Onde o gráfico "deixar uma sombra" é o domínio. Ex: `D(f) = [-1, 4]`.
+* **Imagem:** "Amassar" (projetar) o gráfico no **eixo Y** (vertical). Onde "deixar sombra" é a imagem. Ex: `Im(g) = (-2, 5.25]`.
+
+### Exercícios de Imagem
+* **Q (Petrobras):** `f(x) = x² - 4x + 8` com `D = [0, 2]`.
+    * `f(0) = 8`.
+    * `f(2) = 2² - 4(2) + 8 = 4 - 8 + 8 = 4`.
+    * O Vértice da parábola (ponto mínimo) é `x = -b/2a = -(-4)/2(1) = 2`. Como o vértice está no extremo do domínio, a imagem é `[4, 8]`. (Ok).
+* **Q (E-commerce):** `E(t) = 1000 - 50t` com estoque de 1000 até 200.
+    * `t=0` -> `E(0) = 1000`.
+    * `E(t)=200` -> `1000 - 50t = 200` -> `800 = 50t` -> `t=16`.
+    * Domínio `D = [0, 16]`. Imagem `I = [200, 1000]`. (Ok).
 
 ---
 
@@ -98,9 +110,9 @@ Aqui é onde se classifica como os elementos do domínio se relacionam com o con
 
 ## 5. Funções Crescentes e Decrescentes
 
-* **Função Crescente:** Se `x` aumenta, `y` também aumenta. O gráfico "sobe" da esquerda para a direita.
+* **Função Crescente:** Se `x` aumenta (`x₁ < x₂`), `y` também aumenta (`f(x₁) < f(x₂)`). O gráfico "sobe" da esquerda para a direita.
     * Ex: `f(x) = x`, `f(x) = e^x`.
-* **Função Decrescente:** Se `x` aumenta, `y` diminui. O gráfico "desce" da esquerda para a direita.
+* **Função Decrescente:** Se `x` aumenta (`x₁ < x₂`), `y` diminui (`f(x₁) > f(x₂)`). O gráfico "desce" da esquerda para a direita.
     * Ex: `f(x) = -x`, `f(x) = -sqrt(x)`.
 * **Exercício (Q (UFPE)):** `f(x)` cresce ou decresce em partes. Ela não é "estritamente" nenhuma das duas no gráfico todo.
 
@@ -111,6 +123,7 @@ Aqui é onde se classifica como os elementos do domínio se relacionam com o con
 * **O que é:** O padrão do gráfico se repete em intervalos regulares (`T`, o período).
 * **Definição:** `f(x + T) = f(x)`.
 * **Exemplos:** Eletrocardiograma, `f(x) = sen(t)` (período `2π`), `f(x) = (-1)^x` (período 2, alternando 1, -1, 1, -1...).
+* **Exercício (Q1 Periódica):** Se `f(x)` tem período 2, `g(x) = f(2x)`. Testando `g(x+1) = f(2(x+1)) = f(2x+2) = f(2x)` (pois 2 é o período) `= g(x)`. Logo, o período de `g(x)` é 1. (Ok).
 
 ---
-*Terminei a primeira parte do Tema 4 (até Funções Periódicas). Os exercícios parecem aplicar bastante esses conceitos de restrição de domínio e análise de gráfico.*
+*Terminei o Tema 4. Os exercícios de "Mão na Massa" cobriram bem as restrições de domínio e a identificação dos tipos de função.*
