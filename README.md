@@ -1,3 +1,10 @@
+Ah, sim. Você finalizou o Tema 4, então o `README.md` precisa ser atualizado para refletir que este tema está concluído.
+
+Aqui está o conteúdo limpo e atualizado para o seu `README.md`.
+
+Use o botão "Copiar" no canto do bloco de código abaixo e cole o conteúdo, **substituindo todo** o texto do seu arquivo `README.md`.
+
+```markdown
 # 📚 Diário de Bordo: Ciência da Computação (2025.4)
 
 > Repositório para organizar as anotações e o progresso do semestre. Um lugar pra um estudante de 23 anos tentar manter o conteúdo em ordem.
@@ -20,7 +27,7 @@
 * [x] Tema 1: Introdução *(Concluído em 16/10)*
 * [x] Tema 2: Teoria Dos Conjuntos e Princípios de Contagem *(Concluído em 24/10)*
 * [x] Tema 3: Gráficos e Interpretações Gráficas *(Concluído em 29/10)*
-* [ ] Tema 4: Aprofundamento de Funções *(Iniciado em 30/10)*
+* [x] Tema 4: Aprofundamento de Funções *(Concluído em 03/11)*
 * [ ] Tema 5: Cálculo Proposicional
 * [ ] Tema 6: Cálculo de Predicados
 * [ ] Tema 7: Métodos de Demonstração
@@ -66,3 +73,4 @@
 
 ---
 *"Foco em construir a base."*
+```
