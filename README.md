@@ -21,7 +21,7 @@
 * [x] Tema 2: Teoria Dos Conjuntos e Princípios de Contagem *(Concluído em 24/10)*
 * [x] Tema 3: Gráficos e Interpretações Gráficas *(Concluído em 29/10)*
 * [x] Tema 4: Aprofundamento de Funções *(Concluído em 03/11)*
-* [ ] Tema 5: Cálculo Proposicional *(Iniciado em 05/11)*
+* [x] Tema 5: Cálculo Proposicional *(Concluído em 07/11)*
 * [ ] Tema 6: Cálculo de Predicados
 * [ ] Tema 7: Métodos de Demonstração
 * [ ] Tema 8: Prepare

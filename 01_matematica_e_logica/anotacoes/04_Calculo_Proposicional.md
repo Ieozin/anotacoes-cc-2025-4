@@ -1,101 +1,79 @@
-# Tema 5: Cálculo Proposicional (Parte 1)
-**Data:** 05/11/2025
+# Tema 5: Cálculo Proposicional
+**Período:** 05/11/2025 - 07/11/2025
 
-## 1. Introdução à Lógica Proposicional
+## 1. Introdução à Lógica Proposicional (05/11)
 
-Começando o Tema 5. O vídeo de introdução bateu na tecla de que a lógica matemática é a "caixa de ferramentas" para profissionais de TI, usada para derivar novas verdades a partir de premissas válidas.
+A lógica matemática é a "caixa de ferramentas" para TI. A base vem de Aristóteles (silogismo), mas a notação simbólica de Boole e De Morgan é que deu rigor matemático à coisa.
 
-A base disso tudo vem de Aristóteles, o "pai do pensamento lógico". O ponto principal dele era a **teoria do silogismo**: se as premissas são verdadeiras, a conclusão tem que ser verdadeira.
+## 2. Proposições (A Base do Cálculo) (05/11)
 
-* **Exemplo clássico:** "Todo homem é mortal. Sócrates é homem. Logo, Sócrates é mortal."
-
-O problema da lógica dele é que usava linguagem natural (imprecisa). Por isso, matemáticos como **George Boole** e **Augustus De Morgan** criaram uma notação matemática (simbólica) para a coisa ficar mais rigorosa.
-
-## 2. Proposições (A Base do Cálculo)
-
-A lógica funciona em cima de **proposições**: são sentenças declarativas com sentido completo, que podem ser claramente definidas como **Verdadeiras (V)** ou **Falsas (F)**.
-
-* **NÃO é proposição:** Frases interrogativas ("Qual seu nome?"), exclamativas ("Feliz Natal!") ou imperativas ("Estude, agora!").
-* **É proposição:** "Carlos é estudioso", "2 < 5".
-
-### Três Princípios da Lógica
-1.  **Princípio do 3º Excluído:** Ou é Verdadeiro ou é Falso. Não existe "talvez".
-2.  **Princípio da Não Contradição:** Não pode ser V e F ao mesmo tempo.
-3.  **Princípio da Identidade:** Uma proposição é igual a ela mesma.
-
-### Tipos de Proposição
-* **Simples (Atômica):** Só uma ideia. Usa-se letras minúsculas (`p`, `q`).
-    * Ex: `p: João é inteligente.`
-* **Composta (Molecular):** Formada por duas ou mais proposições simples, ligadas por conectivos.
-    * Ex: "Maria é bonita **e** Pedro é estudioso."
+* **Proposição:** Sentença declarativa com sentido completo que pode ser V ou F. (Ex: "2 < 5").
+* **Não é proposição:** Perguntas, ordens, exclamações.
+* **Princípios:** 3º Excluído (é V ou F), Não Contradição (não pode ser V e F), Identidade (é igual a si mesma).
+* **Tipos:** Simples (`p`, `q`) e Composta (ligada por conectivos).
 
 ---
 
-## 3. Conectivos Lógicos (Os "Juntores")
+## 3. Conectivos Lógicos e Tradução (05/11 - 07/11)
 
-São os símbolos que usamos para transformar a linguagem natural em simbólica e criar proposições compostas.
-
-* **Negação (NÃO):**
-    * **Símbolo:** `~` (ou `¬`)
-    * **Linguagem:** "não", "é falso que..."
-    * **Dupla Negação:** `~(~p)` é a mesma coisa que `p`.
-
-* **Conjunção (E):**
-    * **Símbolo:** `∧`
-    * **Linguagem:** "e", "mas", "além disso"
-    * **Ex:** `p: "Paulo é trabalhador"`, `q: "Paulo é estudioso"` -> `p ∧ q`: "Paulo é trabalhador e estudioso".
-
-* **Disjunção Inclusiva (OU):**
-    * **Símbolo:** `∨`
-    * **Linguagem:** "ou"
-    * **Ex:** "Ana é professora ou médica" (pode ser as duas).
-
-* **Disjunção Exclusiva (OU... OU...):**
-    * **Símbolo:** `⊻` (ou `V` sublinhado)
-    * **Linguagem:** "Ou... ou..."
-    * **Ex:** "Ou Ana é paulista, ou é gaúcha" (não pode ser as duas).
-
-* **Condicional (SE... ENTÃO...):**
-    * **Símbolo:** `→`
-    * **Linguagem:** "Se p, então q"
-    * `p` é o **antecedente** (condição suficiente).
-    * `q` é o **consequente** (condição necessária).
-
-* **Bicondicional (SE E SOMENTE SE):**
-    * **Símbolo:** `↔`
-    * **Linguagem:** "p se e somente se q"
-    * `p` é condição necessária e suficiente para `q` (e vice-versa).
-
-* **(Menos comuns: NAND (↑) = `~(p∧q)` e NOR (↓) = `~(p∨q)`)**
+* **Negação (`~` ou `¬`):** Inverte o valor. `~V = F`.
+* **Conjunção (`∧`, E):** Verdadeira só se **ambas** forem V.
+* **Disjunção Inclusiva (`∨`, OU):** Falsa só se **ambas** forem F.
+* **Disjunção Exclusiva (`⊻`, OU... OU):** Verdadeira se tiverem valores **diferentes** (uma V, outra F).
+* **Condicional (`→`, SE... ENTÃO):** Falsa só no caso "Vera Fischer" (`V → F = F`).
+* **Bicondicional (`↔`, SE E SOMENTE SE):** Verdadeira se tiverem valores **iguais** (VV ou FF).
 
 ---
 
-## 4. Tradução: Linguagem Natural para Simbólica
+## 4. Tabela-Verdade e Valoração (07/11)
 
-O processo é identificar as proposições simples (p, q, r) e os conectivos.
+Ferramenta para determinar o valor lógico de qualquer proposição composta.
+* **Número de linhas:** `2^n` (onde `n` é o número de proposições simples). Ex: 3 proposições (p, q, r) = `2³ = 8` linhas.
+* **Ordem de Precedência:** 1. Parênteses; 2. Negação (`~`); 3. Conjunção/Disjunção (`∧`, `∨`); 4. Condicional (`→`); 5. Bicondicional (`↔`).
 
-* **Exemplo 1 (Negação + "ou"):** "O aluno não aprende rápido ou o professor possui muito conhecimento."
-    * `p: "O aluno aprende rápido"`
-    * `q: "O professor possui muito conhecimento"`
-    * **Simbólica: `~p ∨ q`**
-
-* **Exemplo 2 (Condicional + "ou"):** "Se não vejo Paulo, então não vou ao cinema ou fico triste."
-    * `p: "Não vejo Paulo"`
-    * `q: "Não vou ao cinema"`
-    * `r: "Fico triste"`
-    * **Simbólica: `p → (q ∨ r)`**
-
-* **Exemplo 3 (Negações diversas):**
-    * `"Carla comprou um carro, mas não comprou um apartamento."` -> `p ∧ ~q`
-    * `"Não é verdade que Carla comprou um carro ou um apartamento."` -> `~(p ∨ q)`
-    * `"Carla nem comprou um carro e nem comprou um apartamento."` -> `~p ∧ ~q`
-    * `"É falso que Carla não comprou o carro ou não comprou o apartamento."` -> `~(~p ∨ ~q)`
-
-* **Exercício (Q1 Atividade 4):** "Nem Carlos é engenheiro nem Paulo é professor."
-    * `p: "Carlos é engenheiro"`
-    * `q: "Paulo é professor"`
-    * "Nem... nem..." é o mesmo que "não... E não...".
-    * **Simbólica: `~p ∧ ~q`** (Alternativa C).
+### Classificação das Proposições
+* **Tautologia:** Sempre Verdadeira (última coluna toda V).
+* **Contradição:** Sempre Falsa (última coluna toda F).
+* **Contingência:** Às vezes V, às vezes F.
 
 ---
-*Terminei a primeira parte do Tema 5. Próximo passo: Tabela-Verdade.*
+
+## 5. Álgebra Booleana (07/11)
+
+A lógica dos computadores (bits 0 e 1).
+* **Variáveis:** Assumem 1 (V) ou 0 (F).
+* **Operações:**
+    * **AND (`·`):** Multiplicação Lógica. Equivale a `∧`. `1·1 = 1`, resto é 0.
+    * **OR (`+`):** Adição Lógica. Equivale a `∨`. `0+0 = 0`, resto é 1.
+    * **NOT (`'` ou barra em cima):** Inversão. Equivale a `~`. `1' = 0`, `0' = 1`.
+
+---
+
+## 6. Implicação, Equivalência e Inferência (07/11)
+
+* **Implicação Lógica (`p ⇒ q`):** Quando `p` é V, `q` *também* tem que ser V.
+* **Equivalência Lógica (`p ⇔ q`):** As tabelas-verdade são idênticas.
+    * **Leis de Morgan:** `~(p ∧ q) ⇔ ~p ∨ ~q`  e  `~(p ∨ q) ⇔ ~p ∧ ~q`. (Negar "E" vira "OU", negar "OU" vira "E").
+    * **Contrapositiva:** `p → q ⇔ ~q → ~p`. (Muito útil!).
+
+* **Regras de Inferência (Argumentos Válidos):**
+    * **Modus Ponens:** Se `p → q` e acontece `p`, então acontece `q`.
+    * **Modus Tollens:** Se `p → q` e *não* acontece `q` (`~q`), então *não* aconteceu `p` (`~p`).
+    * **Silogismo Hipotético:** Se `p → q` e `q → r`, então `p → r` (efeito dominó).
+
+---
+
+## 7. Resumo das Atividades (Tema 5) (07/11)
+
+Fiz as atividades durante o estudo do módulo.
+
+* **Q1 (Aristóteles):** Contribuição? Teoria do silogismo. (Ok).
+* **Q1 (Proposição):** O que é? Sentença declarativa com sentido completo (V ou F). (Ok).
+* **Q1 (Conectivos):** Identificar E, OU, SE...ENTÃO, SE E SOMENTE SE, NÃO. (Ok).
+* **Q1 (Simbólica):** "Nem Carlos é engenheiro nem Paulo é professor" -> `~p ∧ ~q`. (Acertei, "nem... nem" é "não um E não outro").
+* **Q1 (Tautologia - ENADE):** Analisei as tabelas. `p → (q → p)` deu tudo V. (Ok).
+* **Q1 (Álgebra Booleana - ENADE):** Ordem de precedência. Multiplicação (`AND`) vem antes da adição (`OR`). A expressão correta era `(~p + q) * r`. (Ok).
+* **Q1 (Argumento Válido):** `p → q` (V), `~q` (V). Conclusão `~p` é V? Sim, Modus Tollens. (Ok).
+* **Q1 (Inferência):** `Se Maria estuda, passa` (`p → q`). `Maria não passou` (`~q`). Logo, `Maria não estudou` (`~p`). É Modus Tollens. (Ok).
+
+**Conclusão do Tema 5:** Fechei Cálculo Proposicional. A parte de Tabela-Verdade é trabalhosa mas mecânica. O mais importante foi entender as Leis de Morgan e as Regras de Inferência (Modus Ponens/Tollens), que são muito usadas para validar argumentos sem ter que fazer tabela gigante toda hora.
