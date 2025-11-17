@@ -1,20 +1,22 @@
-# 📚 Diário de Bordo: Ciência da Computação (2025.4)
+# Diário de Bordo: Ciência da Computação (2025.4)
+**Período:** 2025.4
+**Status:** Em Andamento
 
-> Repositório para organizar as anotações e o progresso do semestre. Um lugar pra um estudante de 23 anos tentar manter o conteúdo em ordem.
+> Anotações e progresso do semestre. Um log para revisão futura, focado no q realmente importa.
 
-## 🗺️ Progresso Geral do Semestre
+## Progresso Geral do Semestre
 
-| Disciplina                         | Status         |
-| ---------------------------------- | -------------- |
-| 01 - Matemática e Lógica           | 🟡 Em Andamento |
-| 02 - Desenvolvimento Web           | ⏳ A Iniciar  |
-| 03 - Banco de Dados                | ⏳ A Iniciar  |
-| 04 - Paradigmas em Python          | ⏳ A Iniciar  |
-| 05 - Arquitetura de Computadores   | ⏳ A Iniciar  |
+| Disciplina | Status |
+| :--- | :--- |
+| 01 - Matemática e Lógica | 🟡 Em Andamento |
+| 02 - Desenvolvimento Web | ⏳ A Iniciar |
+| 03 - Banco de Dados | ⏳ A Iniciar |
+| 04 - Paradigmas em Python | ⏳ A Iniciar |
+| 05 - Arquitetura de Computadores | ⏳ A Iniciar |
 
 ---
 
-## ✅ Checklist Detalhado por Disciplina
+## Checklist Detalhado por Disciplina
 
 ### 01 - Matemática e Lógica
 * [x] Tema 1: Introdução *(Concluído em 16/10)*
