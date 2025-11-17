@@ -22,7 +22,7 @@
 * [x] Tema 3: Gráficos e Interpretações Gráficas *(Concluído em 29/10)*
 * [x] Tema 4: Aprofundamento de Funções *(Concluído em 03/11)*
 * [x] Tema 5: Cálculo Proposicional *(Concluído em 07/11)*
-* [ ] Tema 6: Cálculo de Predicados
+* [x] Tema 6: Cálculo de Predicados *(Concluído em 17/11)*
 * [ ] Tema 7: Métodos de Demonstração
 * [ ] Tema 8: Prepare
 
