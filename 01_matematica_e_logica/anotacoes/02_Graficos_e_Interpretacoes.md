@@ -8,8 +8,8 @@ Gráficos são importantes p/ visualizar dados. Uma planilha gigante é difícil
 Revisão do Tema 2, foco no gráfico.
 * **Reta Real (R):** Todos os números.
 * **Gráfico:**
-    * **Bola Fechada (`●`):** Incluído. `≤` ou `≥`. Colchetes `[ ]`.
-    * **Bola Aberta (`○`):** Não incluído. `<` ou `>`. Parênteses `()`.
+    * **Bola Fechada (`●`):** Incluído. `>=` (maior ou igual) ou `<=` (menor ou igual). Colchetes `[ ]`.
+    * **Bola Aberta (`○`):** Não incluído. `>` (maior) ou `<` (menor). Parênteses `()`.
 * **Amplitude:** `Limite Superior - Limite Inferior`. Não muda se o intervalo é aberto ou fechado.
 
 ---
@@ -24,9 +24,9 @@ Revisão do Tema 2, foco no gráfico.
 ## 3. Funções (29/10)
 * **Conceito:** Relação onde cada `x` tem **só um** `y`.
 * **Teste da Reta Vertical:** Se a reta vertical bater +1 vez no gráfico, **não é função**.
-    * Ex: Parábola deitada (`y² = x`) não é função (pq `x=4` dá `y=2` e `y=-2`).
+    * Ex: Parábola deitada (`y^2 = x`) não é função (pq `x=4` dá `y=2` e `y=-2`).
 * **Domínio (D):** Conjunto de `x` admissíveis. Onde a função "existe".
-    * Ex: `y = sqrt(x)`. Valores negativos de `x` não dão real. Domínio é `x ≥ 0`.
+    * Ex: `y = sqrt(x)`. Valores negativos de `x` não dão real. Domínio é `x >= 0`.
 
 ---
 

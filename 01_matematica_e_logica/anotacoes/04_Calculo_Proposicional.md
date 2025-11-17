@@ -1,69 +1,77 @@
- # Tema 5: Cálculo Proposicional
-**Período:** 05/11 - 07/11
+# Tema 6: Cálculo de Predicados
+**Período:** 10/11 - 17/11
 
-## 1. Introdução (05/11)
-Lógica é a "caixa de ferramentas" p/ TI. Base de Aristóteles (silogismo), mas Boole e De Morgan criaram a notação simbólica rigorosa.
+## 1. Sentenças Abertas (Predicados)
+O Tema 5 era V/F. O Tema 6 é sobre sentenças com variáveis (ex: "x < 5"), q não são V ou F sozinhas.
 
-## 2. Proposições
-* **Proposição:** Sentença declarativa (V ou F). Ex: "2 < 5".
-* **Não é:** Pergunta, ordem, exclamação.
-* **3 Princípios:** 3º Excluído (V ou F, sem meio-termo), Não Contradição (não V e F), Identidade (p é p).
-* **Tipos:** Simples (`p`, `q`) e Composta (ligada por conectivos).
-
----
-
-## 3. Conectivos Lógicos
-Símbolos p/ transformar linguagem natural em simbólica.
-
-* **Negação (`~` ou `¬`):** Inverte o valor. `~V = F`.
-* **Conjunção (`∧`, E):** V só se **ambas** forem V.
-* **Disjunção Inclusiva (`∨`, OU):** F só se **ambas** forem F.
-* **Disjunção Exclusiva (`⊻`, OU... OU):** V se tiverem valores **diferentes**.
-* **Condicional (`→`, SE... ENTÃO):** F só no caso `V → F = F` ("Vera Fischer").
-* **Bicondicional (`↔`, SE E SOMENTE SE):** V se tiverem valores **iguais** (VV ou FF).
+* **Sentença Aberta (p(x)):** Vira V ou F qnd se substitui `x` por um valor. Ex: `p(x): 2x - 3 = 5`. Se `x=4`, `p(4)` é V.
+* **Conjunto Universo (U):** O domínio da sentença (ex: N, Z, R).
+* **Conjunto Verdade (Vp):** O subconjunto de U q torna p(x) verdadeira. É o q realmente importa.
+    * **Ex 1:** `p(x): x+15=8` em `U=Z`. `x=-7`. Como `-7` tá em `Z`, `Vp = {-7}`.
+    * **Ex 2:** `p(x): 2x²+5x=0` em `U=Z`. Soluções `x=0` ou `x=-2.5`. Como `U=Z`, `-2.5` não serve ("raiz estranha ao universo"). `Vp = {0}`.
+* **Operações:** Os conectivos (`~, ∧, ∨`) funcionam nos Conjuntos Verdade. Ex: `V(p ∧ q)` = `Vp ∩ Vq`.
 
 ---
 
-## 4. Tabela-Verdade (07/11)
-Ferramenta p/ achar o valor de proposições compostas.
-* **Linhas:** `2^n` (onde `n` = nº de proposições simples). 3 props = `2³ = 8` linhas.
-* **Precedência:** 1º Parênteses, 2º `~`, 3º `∧` e `∨`, 4º `→`, 5º `↔`.
+## 2. Quantificadores (Fechando a Sentença)
+Fecham a sentença p/ ela virar V ou F.
 
-### Classificação
-* **Tautologia:** Sempre Verdadeira (última coluna da tabela só tem V).
-* **Contradição:** Sempre Falsa (última coluna só tem F).
-* **Contingência:** Misto de V e F.
+* **Universal (∀):**
+    * **Lê-se:** "Para todo", "Qualquer que seja".
+    * **Quando é V?** Só se a propriedade valer p/ **todos** os elementos do Universo (`Vp = U`).
+    * **Quando é F?** Basta **um** contraexemplo.
+    * Ex (F): `(∀x ∈ R)(x² = x)`. É Falso. Contraexemplo: `x=2`.
 
----
+* **Existencial (∃):**
+    * **Lê-se:** "Existe pelo menos um", "Algum".
+    * **Quando é V?** Se *pelo menos um* `x` funcionar (`Vp != ∅`).
+    * **Quando é F?** Só se for impossível (`Vp = ∅`).
+    * Ex (V): `(∃x ∈ R)(x > 4)`. (Ex: `x=5`).
+    * Ex (F): `(∃x ∈ R)(x = x + 2)`. Impossível.
 
-## 5. Álgebra Booleana
-Lógica de computador (bits 0 e 1).
-* **Valores:** 1 (V) e 0 (F).
-* **Operações:**
-    * **AND (`·`):** Multiplicação (equivale a `∧`). `1·1 = 1`, resto é 0.
-    * **OR (`+`):** Adição (equivale a `∨`). `0+0 = 0`, resto é 1.
-    * **NOT (`'`):** Inversão (equivale a `~`). `1' = 0`, `0' = 1`.
-
----
-
-## 6. Implicação, Equivalência e Inferência
-* **Implicação Lógica (`p ⇒ q`):** Qnd `p` é V, `q` *também* tem q ser V.
-* **Equivalência Lógica (`p ⇔ q`):** Tabelas-verdade idênticas.
-    * **Leis de Morgan:** `~(p ∧ q) ⇔ ~p ∨ ~q` (Nega "E" vira "OU").
-    * **Leis de Morgan:** `~(p ∨ q) ⇔ ~p ∧ ~q` (Nega "OU" vira "E").
-    * **Contrapositiva:** `p → q ⇔ ~q → ~p`. (Muito útil).
-* **Regras de Inferência (Argumentos Válidos):**
-    * **Modus Ponens:** Se `p → q` e `p` é V, então `q` é V.
-    * **Modus Tollens:** Se `p → q` e `~q` é V, então `~p` é V.
-    * **Silogismo Hipotético:** Se `p → q` e `q → r`, então `p → r` (efeito dominó).
+* **Unicidade (∃!):**
+    * **Lê-se:** "Existe um, e apenas um".
+    * Ex: `(∃!x ∈ N)(x² = 25)`. V, pq `Vp = {5}` (o `-5` não tá em N).
 
 ---
 
-## 7. Resumo das Atividades (Tema 5) (07/11)
-Exercícios tranquilos.
-* **Tradução:** "Nem... nem..." é `~p ∧ ~q`. (Ok).
-* **Tautologia:** `p → (q → p)` sempre dá V. (Ok).
-* **Álgebra Booleana:** Precedência: `·` (AND) antes de `+` (OR). (Ok).
-* **Inferência:** `(p → q)` + `~q` = `~p` (Modus Tollens). (Ok).
+## 3. Variáveis e Negação
 
-**Conclusão:** Tema 5 fechado. Tabela-Verdade é mecânico. O importante é decorar Morgan e as regras de Inferência (Ponens/Tollens) p/ validar argumentos.
+### Variáveis Livres vs. Ligadas
+* **Ligada:** "Presa" a um quantificador (`∀x` ou `∃x`).
+* **Livre:** Solta, sem quantificador no seu escopo.
+* **Ponto chave:** Se tiver *qualquer* variável livre, a expressão inteira ainda é uma sentença aberta.
+    * Ex: `(∃x)(x + y < 4)`. `x` é ligada, `y` é livre. O valor (V/F) depende de `y`.
+    * Na atividade `∀y((p(x) ∧ ∃x(...)))`, o primeiro `x` em `p(x)` é livre. (Ok)
+
+### Ordem dos Quantificadores
+A ordem importa MUITO.
+* `(∀x ∈ Z)(∃y ∈ Z)(x < y)` -> "Para todo x, existe um y maior". **(Verdadeiro)**.
+* `(∃y ∈ Z)(∀x ∈ Z)(x < y)` -> "Existe um y q é maior q todos os x". **(Falso)**, não existe "o maior inteiro".
+
+### Negação de Quantificadores (Regra Chave)
+Equivalente às Leis de Morgan.
+* **`~ (∀x, p(x)) ⇔ ∃x (~p(x))`**
+    * **Negação de "Todos** são" é "**Existe** um q **não** é".
+    * Ex: `~ (∀x)(x-3 >= 4) ⇔ (∃x)(x-3 < 4)`. (Troca `∀` por `∃` e nega a proposição `>=` -> `<`).
+
+* **`~ (∃x, p(x)) ⇔ ∀x (~p(x))`**
+    * **Negação de "Existe** um" é "**Todos não** são" (ou "Nenhum é").
+    * Ex: `~ (∃x)(x+3 = x) ⇔ (∀x)(x+3 != x)`.
+
+---
+
+## 4. Aplicações em Computação
+* **Prolog (Programming in Logic):** Linguagem declarativa. Usa fatos e regras.
+    * **Fato:** `amigo(paulo, carlos).` (Regra: tudo minúsculo).
+    * **Regra:** `gosta(luiza, X) :- gosta(X, corrida).` (Luiza gosta de X *se* X gosta de corrida).
+* **Sistemas Especialistas:** Simulam raciocínio (ex: diagnóstico médico).
+* **Prova de Correção:** Usar lógica formal p/ provar q um programa é correto. Diferente de "Teste" (q usa dados).
+
+---
+
+## Conclusão (Tema 6)
+Fechei o Tema 6. É o Tema 5 com variáveis. O principal p/ revisar é:
+1.  Diferença de `∀` (Todos) e `∃` (Pelo menos um).
+2.  Regras de Negação (Troca `∀` ⇔ `∃` e nega o predicado).
+3.  A ordem dos quantificadores importa.

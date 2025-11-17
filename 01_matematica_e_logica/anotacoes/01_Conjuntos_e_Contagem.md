@@ -20,8 +20,8 @@ Revisão do básico de conjuntos.
 
 ### Intervalos e Módulo (17/10)
 * **Intervalos:** Pedaços da reta real.
-    * **Fechado:** `≤`, `≥`. Bolinha cheia `●`. Colchetes `[ ]`.
-    * **Aberto:** `<`, `>`. Bolinha vazia `○`. Parênteses `()` (mais fácil) ou `]` `[`.
+    * **Fechado:** `≤` (menor ou igual), `≥` (maior ou igual). Bolinha cheia `●`. Colchetes `[ ]`.
+    * **Aberto:** `<` (menor), `>` (maior). Bolinha vazia `○`. Parênteses `()` (mais fácil) ou `]` `[`.
 * **Módulo (Valor Absoluto):** `|x|` = distância até o zero. `|x - y|` = distância entre `x` e `y`.
     * **Erro q cometi:** Calculei `|2 - 5|` como `5-2=3`. Errado. O certo é `|2 - 5| = |-3| = 3`. O resultado bateu, mas o processo tava errado. Fixou.
     * **Erro em Inequação:** `|2x - 4| < 3`. Ao resolver `1 < 2x < 7`, me confundi na hora de `2x/2`. Pensei q dava `0*x`. Errado, `2/2 = 1`, então `1*x = x`.
@@ -45,24 +45,24 @@ Como contar possibilidades.
 ### Agrupamento Simples (Sem Repetição)
 A chave é: **a ordem importa?**
 
-* **Sim, ordem importa:** Arranjo (`A^n_p`) ou Permutação (`P_n`).
+* **Sim, ordem importa:** Arranjo (`Arranjo(n, p)`) ou Permutação (`P(n)`).
     * Usado p/ senhas, filas, anagramas.
-    * **Arranjo (`A^n_p`):** Escolher `p` de `n`. Fórmula: `$A^n_p = \frac{n!}{(n-p)!}$`.
-    * **Permutação (`P_n`):** Caso especial de arranjo onde usa todos (`p=n`). Fórmula: `$P_n = n!$`.
-* **Não, ordem NÃO importa:** Combinação (`C^n_p`).
+    * **Arranjo(n, p) = n! / (n-p)!**
+    * **Permutação(n) = n!** (É só um Arranjo onde `p=n`).
+* **Não, ordem NÃO importa:** Combinação (`C(n, p)`).
     * Usado p/ comissões, subconjuntos.
     * **Raciocínio:** É o Arranjo, mas dividido por `p!` p/ descontar as repetições de ordem.
-    * **Fórmula:** `$C^n_p = \frac{n!}{p!(n-p)!}$`.
+    * **Fórmula:** `C(n, p) = n! / (p! * (n-p)!)`
 
 ### Agrupamentos Complementares (Com Repetição)
-* **Arranjo com Repetição (`AR^n_p`):** Ordem importa, pode repetir.
-    * Cálculo: `$AR^n_p = n^p$`. (Ex: senhas).
-* **Permutação com Repetição (`PR^n_{p,q,...}`):** Embaralhar `n` objetos com `p`, `q` repetidos.
-    * Cálculo: `$PR^n_{p,q,...} = \frac{n!}{p!q!...}$`. (Ex: anagrama de "Araraquara").
-* **Permutação Circular (`PC_n`):** `n` objetos em círculo (rotações não contam).
-    * Cálculo: `$PC_n = (n-1)!$`.
-* **Combinação com Repetição (`CR^n_p`):** Ordem NÃO importa, pode repetir.
-    * Cálculo: `$CR^n_p = C^{n+p-1}_p$`. (Ex: escolher 8 chocolates de 3 marcas).
+* **Arranjo com Repetição:** Ordem importa, pode repetir.
+    * **Cálculo:** `AR(n, p) = n^p` (Ex: senhas).
+* **Permutação com Repetição:** Embaralhar `n` objetos com `p`, `q` repetidos.
+    * **Cálculo:** `PR = n! / (p! * q! * ...)` (Ex: anagrama de "Araraquara").
+* **Permutação Circular:** `n` objetos em círculo (rotações não contam).
+    * **Cálculo:** `PC(n) = (n-1)!`
+* **Combinação com Repetição:** Ordem NÃO importa, pode repetir.
+    * **Cálculo:** `CR(n, p) = C(n+p-1, p)` (Ex: escolher 8 chocolates de 3 marcas).
 
 **Ponto importante:** O material reforça q o Princípio da Multiplicação é a base. As fórmulas são só atalhos.
 
@@ -72,6 +72,9 @@ A chave é: **a ordem importa?**
 * **Desempenho:** 7/10.
 * **Erros:**
     * **Q2 (Sanduíches):** Errei. Era só multiplicar as opções (3\*5\*2\*5\*4 = 600). Lição: ler com calma.
-    * **Q7 (x+y+z=7):** Não vi q era Combinação com Repetição. `$CR^3_7 = C^9_7 = 36$`. Lição: "distribuir itens idênticos" = CR.
+    * **Q7 (x+y+z=7):** Não vi q era Combinação com Repetição.
+        * **Análise:** "distribuir 7 itens idênticos em 3 caixas (x, y, z)" = CR.
+        * `n=3`, `p=7`.
+        * `CR(3, 7) = C(3+7-1, 7) = C(9, 7) = 36`. Agora entendi o `C(9, 7)`.
     * **Q8 (Sistema Inequações):** Errei o intervalo final. Lição: Resolver cada inequação e depois achar a interseção.
 * **Revisão:** Contagem exige + atenção. Os erros mostraram onde revisar (multiplicação básica, CR, interseção).
