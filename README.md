@@ -25,7 +25,7 @@
 * [x] Tema 4: Aprofundamento de Funções *(Concluído em 03/11)*
 * [x] Tema 5: Cálculo Proposicional *(Concluído em 07/11)*
 * [x] Tema 6: Cálculo de Predicados *(Concluído em 18/11)*
-* [ ] Tema 7: Métodos de Demonstração
+* [ ] Tema 7: Métodos de Demonstração *(Iniciado em 19/11)*
 * [ ] Tema 8: Prepare
 
 ### 02 - Desenvolvimento Web (HTML, CSS, JS, PHP)
