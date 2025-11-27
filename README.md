@@ -1,70 +1,28 @@
 # Diário de Bordo: Ciência da Computação (2025.4)
-**Período:** 2025.4
 **Status:** Em Andamento
 
-> Anotações e progresso do semestre. Um log para revisão futura, focado no q realmente importa.
+> Log de estudos. Anotações diretas p/ revisão, sem enrolação.
 
-## Progresso Geral do Semestre
-
+## Progresso
 | Disciplina | Status |
 | :--- | :--- |
 | 01 - Matemática e Lógica | 🟡 Em Andamento |
 | 02 - Desenvolvimento Web | ⏳ A Iniciar |
 | 03 - Banco de Dados | ⏳ A Iniciar |
 | 04 - Paradigmas em Python | ⏳ A Iniciar |
-| 05 - Arquitetura de Computadores | ⏳ A Iniciar |
+| 05 - Arq. de Computadores | ⏳ A Iniciar |
 
 ---
 
-## Checklist Detalhado por Disciplina
-
-### 01 - Matemática e Lógica
-* [x] Tema 1: Introdução *(Concluído em 16/10)*
-* [x] Tema 2: Teoria Dos Conjuntos e Princípios de Contagem *(Concluído em 24/10)*
-* [x] Tema 3: Gráficos e Interpretações Gráficas *(Concluído em 29/10)*
-* [x] Tema 4: Aprofundamento de Funções *(Concluído em 03/11)*
-* [x] Tema 5: Cálculo Proposicional *(Concluído em 07/11)*
-* [x] Tema 6: Cálculo de Predicados *(Concluído em 18/11)*
-* [ ] Tema 7: Métodos de Demonstração *(Iniciado em 19/11)*
-* [ ] Tema 8: Prepare
-
-### 02 - Desenvolvimento Web (HTML, CSS, JS, PHP)
-* [ ] Tema 1: Introdução
-* [ ] Tema 2: O Ambiente Web Cliente X Servidor
-* [ ] Tema 3: Linguagem de Marcação de Hipertexto - HTML
-* [ ] Tema 4: Linguagem de Marcação e Estilos - CSS
-* [ ] Tema 5: Linguagem Javascript
-* [ ] Tema 6: Programação de Páginas Dinâmicas Com Php
-* [ ] Tema 7: Integração do Php Com Banco de Dados
-* [ ] Tema 8: Prepare
-
-### 03 - Banco de Dados
-* [ ] Tema 1: Introdução
-* [ ] Tema 2: Sistema de Banco de Dados
-* [ ] Tema 3: Projeto de Banco de Dados: Modelagem Conceitual
-* [ ] Tema 4: Projeto de Banco de Dados: Modelagem Lógica
-* [ ] Tema 5: Criação e Manipulação de Objetos no PostgreSQL
-* [ ] Tema 6: Consultas em Uma Tabela no PostgreSQL
-* [ ] Tema 7: Consultas Com Várias Tabelas no PostgreSQL
-* [ ] Tema 8: Prepare
-
-### 04 - Paradigmas em Python
-* [ ] Tema 1: Introdução
-* [ ] Tema 2: Paradigmas e Linguagem Python
-* [ ] Tema 3: Python Básico
-* [ ] Tema 4: Python Estruturado
-* [ ] Tema 5: Python Orientado a Objetos
-* [ ] Tema 6: Prepare
-
-### 05 - Arquitetura de Computadores
-* [ ] Tema 1: Introdução
-* [ ] Tema 2: Base Computacional
-* [ ] Tema 3: Componentes de Hardware
-* [ ] Tema 4: Representação de Dados
-* [ ] Tema 5: Lógica Digital
-* [ ] Tema 6: Processamento em Paralelo
-* [ ] Tema 7: Arquitetura Cisc X Risc
-* [ ] Tema 8: Prepare
+## Checklist: Matemática e Lógica
+* [x] **Tema 1:** Introdução (Base)
+* [x] **Tema 2:** Conjuntos e Contagem (Fórmulas e Princípios)
+* [x] **Tema 3:** Gráficos (Intervalos e Cartesiano)
+* [x] **Tema 4:** Funções (Domínio, Imagem, Injetora/Sobrejetora)
+* [x] **Tema 5:** C. Proposicional (Tabela-Verdade, Conectivos)
+* [x] **Tema 6:** C. Predicados (Quantificadores, Negação)
+* [x] **Tema 7:** Métodos de Demonstração (Indução, Absurdo)
+* [ ] **Tema 8:** Prepare
 
 ---
-*"Foco em construir a base."*
+*"Foco na base."*

@@ -1,83 +1,66 @@
-# Tema 7: Métodos de Demonstração e Quantificadores Avançados
+# Tema 7: Métodos de Demonstração
 **Data:** 19/11/2025 - 21/11/2025
 **Status:** Concluído
 
 ## 1. Introdução
-Demonstração matemática é provar que um teorema é verdadeiro para todos os casos, usando axiomas e lógica. É como validar que um código não tem bugs lógicos.
-* **Estrutura:** `P(x) -> Q(x)` ("Se P, então Q").
-* **Essencial:** Sempre definir o conjunto universo (S) da variável.
+Demonstrar é provar matematicamente que uma afirmação é verdadeira para **todos** os casos do conjunto universo. É como validar a lógica de um algoritmo para garantir que ele nunca quebra.
+* **Estrutura:** `P(x) -> Q(x)` ("Se P acontece, então Q acontece").
+* **Regra de ouro:** Sempre definir o conjunto universo (ex: `n` em Z, `x` em R). Sem isso, a prova não vale.
 
 ---
 
-## 2. Aprofundamento em Quantificadores (20/11)
-Ferramentas essenciais para as demonstrações.
-
-### Universal (`∀`)
-* **Lê-se:** "Para todo", "Qualquer que seja".
-* **Uso:** Afirma que a regra vale para **100%** do conjunto.
-* **Validade:** Verdadeiro só se `P(x)` for V para *todos*. Falso se tiver **um** contraexemplo.
-    * Ex (V): `∀x ∈ N, x + 2 > x`.
-    * Ex (F): `∀x ∈ R, x² = x` (Contraexemplo: `x=2`).
-
-### Existencial (`∃`)
-* **Lê-se:** "Existe", "Pelo menos um".
-* **Uso:** Afirma que a regra vale para **algum** elemento.
-* **Validade:** Verdadeiro se achar **um** `x` que funcione. Falso só se for impossível.
-    * Ex (V): `∃x ∈ R, x² = 3`. (Verdadeiro, `x = √3`).
-
-### Regra de Negação (Importante p/ Provas)
-* **Negar `∀`:** Vira `∃` + nega o predicado.
-    * "Todo A é B" -> "Existe A que **NÃO** é B".
-* **Negar `∃`:** Vira `∀` + nega o predicado.
-    * "Existe A que é B" -> "Todo A **NÃO** é B" (Nenhum é).
-
----
-
-## 3. Tipos de Demonstração (19/11)
+## 2. Tipos de Demonstração (O Cinto de Utilidades)
 
 ### A. Trivial
-* **Quando:** A conclusão `Q` é **sempre verdadeira**, não importa `P`.
-* **Exemplo:** "Se `x < 0`, então `x² + 1 > 0`". O `x² + 1` é positivo pra qualquer `x`.
+* **O que é:** Quando a conclusão `Q` é verdadeira para **qualquer** valor, independente da premissa `P`.
+* **Lógica:** Se `Q` é V, a implicação `P -> Q` é sempre V.
+* **Exemplo:** "Se `x < 0`, então `x² + 1 > 0`".
 
 ### B. Vacuidade
-* **Quando:** A premissa `P` é **sempre falsa** (impossível).
-* **Exemplo:** "Se `x² - 2x + 2 <= 0`, então...". A equação nunca é `<= 0`. Premissa falsa torna a implicação verdadeira.
+* **O que é:** Quando a premissa `P` é **falsa** para todos os elementos (impossível de acontecer).
+* **Lógica:** Se `P` é F, a implicação `P -> Q` é sempre V (pela tabela-verdade).
+* **Exemplo:** "Se `x² - 2x + 2 <= 0`, então `x³ >= 8`".
 
 ### C. Direta
-* **Quando:** O padrão. Assume `P` (V) e chega em `Q` (V) usando álgebra.
-* **Exemplo:** "Se `n` é ímpar, `5n+3` é par".
-    1. `n = 2k + 1`
-    2. `5(2k+1) + 3` = `10k + 8`
-    3. `2(5k + 4)`. Múltiplo de 2 é par. Provado.
+* **O que é:** O método padrão. Assume que `P` é verdade e usa álgebra/lógica para chegar em `Q`.
+* **Como fazer:** Encadeamento lógico. Usa definições básicas (par = 2k, ímpar = 2k+1).
 
-### D. Contrapositiva
-* **Quando:** Direta é difícil. Inverte a lógica: `~Q -> ~P`.
-* **Exemplo:** "Se `3x - 15` par, então `x` ímpar".
-    * Contrapositiva: "Se `x` par, `3x - 15` ímpar". Fácil de provar.
+### D. Contrapositiva (Contraposição)
+* **O que é:** Provar `~Q -> ~P` em vez de `P -> Q`. Elas são logicamente equivalentes.
+* **Quando usar:** Quando provar o caminho direto é difícil.
 
-### E. Redução ao Absurdo
-* **Quando:** Negar a tese é mais fácil.
-* **Lógica:** Assume que `P` é V e `Q` é F. Tenta achar uma contradição (tipo `1 = 0`).
+### E. Redução ao Absurdo (Contradição)
+* **O que é:** Assumir que a tese é mentira e mostrar que isso gera um erro lógico (uma contradição).
+* **Passo a passo:**
+    1. Assume que a premissa `P` é V.
+    2. Assume que a conclusão `Q` é **Falsa**.
+    3. Desenvolve até achar um absurdo (tipo "x é par e ímpar ao mesmo tempo" ou "1 = 0").
+    4. Se deu absurdo, a suposição de que `Q` era falsa estava errada. Logo, `Q` é V.
 
 ---
 
-## 4. Princípio da Indução (21/11)
-Técnica para provar algo para **todos** os números naturais. O "efeito dominó".
+## 3. Princípio da Indução (O "Efeito Dominó")
+Usado para provar propriedades em conjuntos infinitos ordenados (Naturais).
 
-### A. Indução Padrão (Fraca)
-1.  **Base:** Provar que vale para o primeiro número (`n=1`). (O primeiro dominó cai).
-2.  **Passo Indutivo:** Assumir que vale para `k` e provar que vale para `k+1`. (Se um cai, o próximo cai).
-    * **Exemplo (Soma):** `1 + ... + n = n(n+1)/2`.
-    * Assume para `k`, soma `k+1` dos dois lados e fatora até chegar na fórmula para `k+1`.
+### A. Indução Matemática (Padrão)
+Para provar que vale para todo `n`:
+1. **Base (Âncora):** Provar que vale para o primeiro número (`n=1`). (O primeiro dominó cai).
+2. **Passo Indutivo:** Assumir que vale para `k` (Hipótese) e provar que vale para `k+1` (Tese).
+    * Se vale para um, e esse um derruba o próximo, vale para todos.
 
 ### B. Indução Forte
-* **Diferença:** No passo indutivo, assume que vale para **todos** os anteriores (`1` até `k`) para provar `k+1`.
-* **Uso:** Sequências recursivas (onde `a_n` depende de `a_{n-1}` e `a_{n-2}`).
+* **Diferença:** No passo indutivo, assume que vale para **todos** os anteriores (`1, 2...` até `k`) para provar `k+1`.
+* **Uso:** Sequências recursivas onde o termo atual depende de vários anteriores (tipo Fibonacci).
 
 ---
 
-## 5. Resumo Prático das Atividades
+## 4. Resumo Prático para Provas
 
-* **Quantificadores:** Identificar palavras-chave ("Todo" vs "Existe").
-* **Divisibilidade:** Em provas de indução, o segredo é manipular a álgebra para fazer aparecer a expressão da hipótese.
-* **Lógica:** A negação de "Todos são" não é "Nenhum é", mas sim "Existe um que não é".
+* **Identificar o método:**
+    * Tem "Para todo n"? -> Provavelmente Indução.
+    * Tem "Se... então..." e álgebra complexa? -> Tente Direta ou Contrapositiva.
+    * Tem negação ou irracionais? -> Tente Absurdo.
+* **Definições úteis:**
+    * Par: `2k`
+    * Ímpar: `2k + 1`
+    * Racional: `p/q` (com q != 0)
