@@ -1,34 +1,28 @@
 # Tema 4: Aprofundamento de Funções
-**Data:** 30/10 - 04/11
+**Status:** Concluído
 
-## 1. Definições
-* **Domínio (D):** Entrada. Onde a função existe.
-* **Contradomínio (CD):** Tudo que *pode* sair.
-* **Imagem (Im):** O que *realmente* sai. Subconjunto do CD.
+## 1. O Trio: Domínio, Contradomínio e Imagem
+* **Domínio (D):** Quem entra (eixo X). Onde a função existe.
+* **Contradomínio (CD):** Quem *pode* sair. O universo de chegada.
+* **Imagem (Im):** Quem *realmente* sai (eixo Y). Subconjunto do CD.
 
 ## 2. Achar o Domínio (Restrições)
-Procurar o que quebra a matemática:
-1.  **Divisão:** Denominador `!= 0`.
-    * Ex: `1/(x-2)` -> `x != 2`.
-2.  **Raiz Par:** Dentro `>= 0`.
-    * Ex: `sqrt(x)` -> `x >= 0`.
+Matemática não aceita duas coisas. Para achar o domínio, procure o q é proibido:
+1.  **Divisão por Zero:** Denominador tem q ser `!= 0`.
+2.  **Raiz Par de Negativo:** O q tá dentro da raiz tem q ser `>= 0`.
+    * *Dica:* Se tiver os dois juntos (raiz no denominador), o de dentro tem q ser estritamente `> 0`.
 
-## 3. Achar a Imagem
-* **Inversa:** Imagem da `f` = Domínio da `f-1`.
-    * Isolar o x para achar a inversa.
-* **Gráfico:** Projeção no eixo Y.
+## 3. Classificação (As "jetoras")
+* **Injetora:** 1 para 1. Não repete resultado.
+    * *Teste:* Reta horizontal corta só 1 vez.
+* **Sobrejetora:** Imagem = Contradomínio. Não sobra ninguém no conjunto de chegada.
+* **Bijetora:** É as duas. (Perfeita, admite inversa).
 
-## 4. Classificação
-* **Injetora:** 1 para 1. `x` diferentes dão `y` diferentes. Teste da reta horizontal (corta 1x só).
-* **Sobrejetora:** Imagem = Contradomínio. Cobre todo o eixo Y previsto.
-* **Bijetora:** Injetora + Sobrejetora.
+## 4. Função Inversa
+* Só existe se for Bijetora.
+* **Propriedade:** O Domínio da `f` vira a Imagem da `f-1` e vice-versa.
+* **Como calcular:** Troca x por y na equação e isola o y novo.
 
-## 5. Comportamento
-* **Crescente:** x sobe, y sobe.
-* **Decrescente:** x sobe, y desce.
-* **Periódica:** Repete padrão. `f(x+T) = f(x)`.
-
-## Resumo Prático das Atividades
-* **Função por partes:** Analisar imagem de cada trecho e unir. Cuidado com "buracos" no gráfico.
-* **Trigonometria:** `sen(x)` tem imagem `[-1, 1]`. Não é sobrejetora nos Reais.
-* **Domínio Misto:** Se tem raiz e divisão, fazer a interseção das restrições.
+## Resumo dos Erros (P/ Revisar)
+* **Função por Partes:** Calcular a imagem de cada pedaço separado e depois unir. Cuidado com os "buracos".
+* **Trigonometria:** `sen(x)` vai de -1 a 1. Não é sobrejetora nos Reais.

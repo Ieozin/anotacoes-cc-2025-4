@@ -1,26 +1,23 @@
 # Tema 3: Gráficos e Interpretações
-**Data:** 27/10 - 29/10
+**Status:** Concluído
 
-## 1. Intervalos
-* **Visual:** Bolinha cheia = fechado (`[`). Bolinha vazia = aberto (`(`).
-* **Amplitude:** `Maior - Menor`.
+## 1. Plano Cartesiano
+* Eixo X (Horizontal/Abscissa) e Eixo Y (Vertical/Ordenada).
+* **Par Ordenado:** `(x, y)`. O `x` vem sempre antes.
+* **Quadrantes:** Sentido anti-horário.
+    * 1º (+,+) | 2º (-,+)
+    * 3º (-,-) | 4º (+,-)
 
-## 2. Plano Cartesiano
-* Eixo X (horizontal/abscissa) e Eixo Y (vertical/ordenada).
-* Par ordenado `(x, y)`.
-* **Cuidado:** `(2, 5)` pode ser ponto ou intervalo aberto. Contexto manda.
+## 2. Funções no Gráfico
+* **Definição Visual:** Para ser função, cada `x` só pode ter um `y`.
+* **Teste da Reta Vertical:** Se passar um traço em pé e cortar o gráfico em 2 pontos, **não** é função.
 
-## 3. Funções
-* **Regra:** Cada `x` gera apenas um `y`.
-* **Teste da Reta Vertical:** Se uma linha vertical cruza o gráfico 2x, não é função.
-* **Domínio:** Valores válidos de x.
-* **Imagem:** Valores resultantes de y.
+## 3. Leitura de Dados (O q cai em prova)
+* **Raízes:** Onde o gráfico bate no eixo X (y=0).
+* **Máximo e Mínimo:** O topo e o fundo do gráfico.
+    * Se pedir "quando", olha o eixo X.
+    * Se pedir "o valor", olha o eixo Y.
 
-## 4. Leitura de Gráfico
-* **Raízes:** Onde gráfico bate no eixo X (`y=0`).
-* **Máximo/Mínimo:** Pico e vale.
-    * `x` = quando ocorre.
-    * `y` = valor atingido.
-
-## Ponto de Atenção
-* **Quadrantes:** I (+,+), II (-,+), III (-,-), IV (+,-). Sentido anti-horário.
+## Lições Aprendidas
+* Cuidado com a escala dos eixos. Às vezes o gráfico começa do 0, às vezes não.
+* Atenção à diferença entre "aumento percentual" e "aumento absoluto" ao ler gráficos de linha.

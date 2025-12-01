@@ -1,27 +1,28 @@
 # Tema 6: Cálculo de Predicados
-**Período:** 10/11 - 18/11
+**Status:** Concluído
 
-## 1. Sentenças Abertas
-* Expressão com variável (`x`). Vira V/F quando `x` é definido.
-* **Conjunto Universo (U):** Opções disponíveis p/ x.
-* **Conjunto Verdade (Vp):** Opções que tornam a frase Verdadeira.
+## 1. A Novidade: Variáveis
+Cálculo Proposicional era estático (P é V). Aqui entra o `x`.
+* **Sentença Aberta:** `x > 5`. Não sei se é V ou F até definir o `x`.
+* **Conjunto Verdade (Vp):** Os valores do universo q fazem a frase ser V.
 
 ## 2. Quantificadores
-* **Universal (`∀`):** "Para todo". V se vale pra 100% de U. F se tiver 1 contraexemplo.
-* **Existencial (`∃`):** "Existe". V se tiver pelo menos 1 caso. F se for impossível.
-* **Unicidade (`∃!`):** "Existe um único".
+Transformam a sentença aberta em proposição (V/F).
+* **Universal (`∀`):** "Para todo".
+    * V se funcionar para 100% dos casos.
+    * F se tiver **um** contraexemplo.
+* **Existencial (`∃`):** "Existe".
+    * V se tiver pelo menos um caso q funcione.
+    * F se for impossível.
 
-## 3. Negação (Regras)
-* **Negar `∀`:** `∃` + nega verbo.
-    * "Todo A é B" -> "Existe A que **não** é B".
-* **Negar `∃`:** `∀` + nega verbo.
-    * "Existe A que é B" -> "Todo A **não** é B" (Nenhum A é B).
+## 3. Negação (Atenção aqui)
+Como negar frases com "Todo" e "Existe".
+* **Negar `∀`:** Vira `∃` + nega o verbo.
+    * "Todo político é honesto" -> Negação: "Existe político que **não** é honesto". (Não é "Nenhum é"!).
+* **Negar `∃`:** Vira `∀` + nega o verbo.
+    * "Existe um cisne azul" -> Negação: "Todo cisne **não** é azul" (Nenhum é).
 
-## 4. Computação
-* **Prolog:** Fatos e Regras. Letra minúscula p/ constantes, Maiúscula p/ variáveis.
-* **Prova de Correção:** Lógica p/ validar algoritmos.
-
-## Resumo Prático das Atividades
-* **Negação:** Cuidado com o português. Negar "Todo" não é "Nenhum".
-* **Prolog:** Sintaxe importa (`?-` para queries).
-* **Múltiplos Quantificadores:** A ordem muda o sentido. `∀x∃y` != `∃y∀x`.
+## 4. Computação (Prolog)
+* **Fato:** `pai(joao, pedro).` (Letra minúscula, ponto no fim).
+* **Regra:** `avo(X, Z) :- pai(X, Y), pai(Y, Z).`
+* **Query:** `?- pai(X, pedro).`

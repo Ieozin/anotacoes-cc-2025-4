@@ -1,29 +1,31 @@
 # Tema 5: Cálculo Proposicional
-**Período:** 05/11 - 07/11
+**Status:** Concluído
 
 ## 1. Proposições
-* Sentença que pode ser V ou F.
-* **Não é:** Pergunta, ordem, paradoxo.
-* **Princípios:** 3º Excluído (V ou F), Não Contradição.
+* Sentença q pode ser V ou F.
+* **Não é proposição:** Pergunta, ordem, paradoxo.
 
-## 2. Conectivos
-* **NÃO (`~`):** Inverte.
-* **E (`^`):** V se **tudo** V.
-* **OU (`v`):** V se **pelo menos um** V.
-* **OU...OU (`v` sublinhado):** V se forem **diferentes**.
-* **SE...ENTÃO (`->`):** Falso só se V -> F ("Vera Fischer").
-* **SE, SÓ SE (`<->`):** V se forem **iguais**.
+## 2. Conectivos (Tabela-Verdade)
+A base de toda a lógica digital.
 
-## 3. Tabela-Verdade
-* Linhas = `2^n`.
-* Precedência: `()` > `~` > `^/v` > `->` > `<->`.
+| Conectivo | Símbolo | Nome | Regra (Quando é V?) |
+| :--- | :---: | :--- | :--- |
+| **NÃO** | `~` | Negação | Inverte o valor. |
+| **E** | `^` | Conjunção | Só se **tudo** for V. |
+| **OU** | `v` | Disjunção | Se **pelo menos um** for V. |
+| **OU..OU**| `v_` | Disj. Exclusiva| Se forem **diferentes**. |
+| **SE..ENTÃO**| `->` | Condicional | Só é F no caso "Vera Fischer" (V->F). |
+| **SE, SÓ SE**| `<->` | Bicondicional| Se forem **iguais**. |
 
-## 4. Lógica
-* **Tautologia:** Sempre V.
-* **Contradição:** Sempre F.
-* **Equivalências Chave:**
-    * **Morgan:** `~(p ^ q)` = `~p v ~q` (Nega E vira OU).
-    * **Contrapositiva:** `p -> q` = `~q -> ~p`.
-* **Inferência:**
-    * **Modus Ponens:** `p->q` e `p` => `q`.
-    * **Modus Tollens:** `p->q` e `~q` => `~p`.
+## 3. Tabela-Verdade na Mão
+* Número de linhas = `2^n` (n = número de variáveis).
+* **Ordem:** `()` > `~` > `^/v` > `->` > `<->`.
+
+## 4. Equivalências e Inferência (Atalhos)
+* **Tautologia:** Sempre V. **Contradição:** Sempre F.
+* **Morgan:**
+    * `~(A e B)` = `~A ou ~B`
+    * `~(A ou B)` = `~A e ~B`
+* **Contrapositiva (Muito Útil):** `P -> Q` é igual a `~Q -> ~P`. (Se chove molha = Se não molhou, não choveu).
+* **Modus Ponens:** `P -> Q` e `P` são verdade => `Q` é verdade.
+* **Modus Tollens:** `P -> Q` e `~Q` são verdade => `~P` é verdade.
