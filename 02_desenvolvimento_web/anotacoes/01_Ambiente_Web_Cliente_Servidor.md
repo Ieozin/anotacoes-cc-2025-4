@@ -1,77 +1,76 @@
-# **Tema 2: O Ambiente Web Cliente X Servidor e as Tecnologias**
+# Tema 2: Interface Web, Design Responsivo e HTML
+**Data:** 02/12
+**Status:** Concluído
 
-Data: 01/12/2025  
-Status: Iniciado
+## 1. Conceito de Interface (IHC)
+A ponte entre o usuário e o sistema.
+* **Foco:** Usabilidade e Clareza. O usuário não técnico tem q conseguir usar sem sofrer.
+* **Evolução:** * Linha de comando (CLI) -> Interface Gráfica (GUI) -> Interfaces Naturais/Toque.
+* **Mudança de Paradigma:** Antigamente o usuário se adaptava ao hardware. Hoje (com smartphones/tablets), a interface tem q se adaptar ao dispositivo.
 
-## **1\. Conceitos Básicos**
+## 2. Design Responsivo
+É a capacidade da página se adaptar **automaticamente** ao tamanho da tela, orientação e plataforma.
+* **Origem:** Arquitetura responsiva (salas q mudam conforme o fluxo de pessoas).
+* **Objetivo:** Evitar criar um site diferente para cada dispositivo (m.site.com). Um código único serve p/ todos.
 
-* **Ambiente Web:** Sistema distribuído onde vc acessa serviços (sites, apps) via navegador/internet.  
-* **Interface:** O meio de comunicação entre o usuário e o sistema (tela, botões).
+### O "Tripé" do Responsivo
+Para funcionar, usamos 3 técnicas juntas:
+1. **Layouts Fluidos:** As larguras não são fixas. O conteúdo estica ou encolhe.
+2. **Media Queries:** O CSS aplica regras diferentes dependendo da condição (ex: `se largura < 600px`).
+3. **Scripts (JS):** Para interações dinâmicas e ajustes de conteúdo.
 
-## **2\. Arquitetura Cliente x Servidor**
+### Unidades de Medida (CSS)
+Isso cai muito em questão técnica. Diferença entre fixo e relativo:
+* **PX (Pixel):** Fixo. Ruim p/ responsivo.
+* **% (Porcentagem):** Fluido.
+* **EM:** Relativo ao tamanho da fonte do elemento **pai**.
+* **REM (Root EM):** Relativo ao tamanho da fonte do elemento **raiz** (`html`). *Mais previsível q o EM.*
 
-A base de como a internet funciona. Saiu do modelo centralizado (Mainframes) para o distribuído (Xerox PARC, anos 70).
+---
 
-* **Cliente (Frontend):** Quem pede o serviço (**Requisição**). É o seu PC, celular, tablet. Inicia a conversa.  
-* **Servidor (Backend):** Quem fornece o serviço (**Resposta**). É robusto, fica ligado 24/7 processando pedidos.
+## 3. Responsivo vs. Adaptativo
+Parecem iguais, mas a lógica interna é diferente.
 
-### **Evolução das Camadas (Importante p/ prova)**
+| Característica | Design Responsivo | Design Adaptativo |
+| :--- | :--- | :--- |
+| **Layout** | Fluido / Líquido | Estático (com "saltos") |
+| **Técnica** | Se ajusta pixel a pixel | Usa "Breakpoints" fixos |
+| **Flexibilidade** | Alta (qualquer tela) | Média (telas predefinidas) |
+| **Complexidade** | Mais difícil de codar | Mais trabalhoso (vários layouts) |
 
-A arquitetura evoluiu p/ separar responsabilidades e facilitar manutenção.
+> **Ponto de Atenção:** No adaptativo, se a tela tiver 700px e o breakpoint for 720px, ele pode carregar o layout de 360px (perde espaço). O responsivo aproveitaria os 700px totais.
 
-1. **2 Camadas:** O Cliente falava direto com o Servidor de Dados.  
-   * *Problema:* Se mudar uma regra de negócio, tem q atualizar o software em cada cliente. Manutenção pesada.  
-2. **3 Camadas:** Entrou o **Servidor de Aplicação** no meio. (Cliente \-\> App \-\> Dados).  
-   * *Melhoria:* Centralizou a regra de negócio, mas o cliente ainda tinha software instalado.  
-3. **4 Camadas (O Padrão Web Atual):**  
-   * **Cliente:** Só precisa do navegador. Zero instalação.  
-   * **Servidor Web:** Cuida da interface (entrega o HTML/CSS/JS).  
-   * **Servidor de Aplicação:** Roda a lógica pesada.  
-   * **Servidor de Dados:** Guarda a informação.  
-   * *Vantagem:* Robustez e portabilidade total. O cliente não precisa saber nada do servidor.
+---
 
-## **3\. Comunicação Web (HTTP)**
+## 4. Mobile First
+Abordagem de desenvolvimento moderna.
+* **Lógica:** Cria primeiro p/ celular (telas pequenas, internet lenta, toque) e depois expande p/ desktop.
+* **Progressive Enhancement:** Começa simples e adiciona recursos (melhoria progressiva).
+* **Graceful Degradation:** (Oposto/Antigo) Cria p/ desktop e vai "capando" recursos p/ funcionar no mobile.
 
-Tudo na web é um ciclo eterno de **Pedido e Resposta**.
+---
 
-* **Protocolo:** HTTP (HyperText Transfer Protocol).  
-* **O Ciclo:**  
-  1. **Request (Requisição):** Cliente digita www.site.com ou clica num link.  
-  2. **Processamento:** Servidor recebe, roda o código, busca no banco.  
-  3. **Response (Resposta):** Servidor devolve o arquivo (HTML) pro navegador mostrar.
+## 5. HTML (HyperText Markup Language)
+A estrutura da página (o esqueleto/vigas). Não é programação, é **marcação**.
+* **Analogia:** HTML = Estrutura (Vigas/Paredes) | CSS = Acabamento (Pintura/Decoração).
+* **Estrutura Base:** `<!DOCTYPE html>`, `html`, `head` (metadados), `body` (o q aparece na tela).
 
-### **Tecnologias (Onde roda o quê?)**
+### HTML5 e Semântica
+As tags agora têm significado (semântica), não servem só p/ formatar. Isso ajuda o Google (SEO) e leitores de tela (acessibilidade).
 
-* **Client-Side (Lado do Cliente):** Roda no seu navegador. Foco em interface e beleza.  
-  * Exemplos: HTML, CSS, JavaScript.  
-* **Server-Side (Lado do Servidor):** Roda no servidor. Foco em lógica, segurança e banco de dados.  
-  * Exemplos: PHP, Java, Python, Node.js.
+**Tags Estruturais Essenciais:**
+* `<header>`: Cabeçalho (logo, busca).
+* `<nav>`: Menu de navegação.
+* `<main>`: Conteúdo principal.
+* `<section>`: Agrupamento temático de conteúdo.
+* `<article>`: Conteúdo independente (ex: post de blog).
+* `<footer>`: Rodapé.
 
-## **4\. Páginas Dinâmicas**
+---
 
-* **Estática:** O conteúdo é fixo (só HTML). Igual pra todo mundo.  
-* **Dinâmica:** O conteúdo é **gerado na hora** pelo servidor, personalizado (seu feed, seu saldo).
-
-### **Exemplo Prático (PHP)**
-
-Como o dado sai do formulário e chega no servidor.  
-**1\. O Formulário (HTML \- Frontend):**  
-\<\!-- action: pra onde vai. method: como vai (POST \= escondido no corpo) \--\>  
-\<form action="welcome.php" method="POST"\>  
-    Nome: \<input type="text" name="nome"\>  
-    \<input type="submit"\>  
-\</form\>
-
-**2\. O Recebimento (PHP \- Backend):**  
-\<\!-- $\_POST é a variável mágica que pega o dado pelo 'name' do input \--\>  
-Bem-vindo, \<?php echo $\_POST\["nome"\]; ?\>
-
-* **Métodos de Envio:**  
-  * **GET:** Dados vão na URL (site.com?id=10). Rápido, mas **inseguro** p/ senhas.  
-  * **POST:** Dados vão no corpo da requisição. Mais seguro e cabe mais coisa.
-
-## **5\. Resumo Prático (Para não esquecer)**
-
-* **Modelo 4 Camadas:** É o melhor pq tira a responsabilidade do cliente. Só precisa de browser.  
-* **Request/Response:** A web é um bate-bola constante entre cliente e servidor.  
-* **PHP:** Para pegar dados de um form POST, usa $\_POST\["nome\_do\_campo"\]. O comando echo imprime na tela.
+## Resumo p/ Revisão Rápida
+* **Responsivo:** Usa fluid grid + media queries. É elástico.
+* **Adaptativo:** Usa layouts fixos baseados em breakpoints. É estático em blocos.
+* **Unidades:** Prefira **REM** ou **%** para layouts modernos. Evite **PX** para containers.
+* **Mobile First:** Começa pequeno e expande (Progressive Enhancement).
+* **HTML Semântico:** Usar `<nav>` e `<header>` é melhor q usar `<div>` pra tudo.
