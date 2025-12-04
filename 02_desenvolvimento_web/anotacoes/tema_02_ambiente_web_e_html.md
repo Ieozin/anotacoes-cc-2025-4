@@ -1,56 +1,78 @@
-# Tema 2: Interface Web, Design Responsivo e HTML
-**Data:** 02/12
-**Status:** Concluído
+# Tema 2: O Ambiente Web e Tecnologias
+**Data:** 04/12/2025
+**Status:** Revisão
 
-## 1. Conceito de Interface (IHC)
-A ponte entre o usuário e o sistema.
-* **Foco:** Usabilidade e Clareza. O usuário não técnico tem q conseguir usar sem sofrer.
-* **Evolução:** Linha de comando (CLI) -> Interface Gráfica (GUI) -> Interfaces Naturais/Toque.
-* **Mudança de Paradigma:** Antigamente o usuário se adaptava ao hardware. Hoje (smartphones/tablets), a interface se adapta ao dispositivo.
+## 1. Arquitetura Cliente x Servidor
+A base de como a web funciona. A premissa é separar dados (servidor) da interface (cliente).
 
-## 2. Design Responsivo
-A capacidade da página se adaptar **automaticamente** ao tamanho da tela, orientação e plataforma.
-* **Origem:** Arquitetura responsiva (salas q mudam conforme o fluxo).
-* **Objetivo:** Um código único p/ todos os dispositivos (evitar criar sites separados tipo `m.site.com`).
+### Evolução das Camadas
+1.  **2 Camadas:** Cliente (Interface + Lógica) ↔ Banco de Dados. *Problema: Difícil atualizar a lógica em todos os clientes.*
+2.  **3 Camadas:** Cliente (Interface) ↔ Servidor de Aplicação (Lógica) ↔ Banco de Dados.
+3.  **4 Camadas (Modelo Web):** Cliente (Navegador) ↔ Servidor Web ↔ Servidor de Aplicação ↔ Banco de Dados.
+    * **Vantagem:** O cliente não instala nada, só usa o navegador. A interface vem do servidor web.
 
-### O "Tripé" do Responsivo
-Para funcionar, usamos 3 técnicas juntas:
-1. **Layouts Fluidos:** Larguras não fixas (usam %). O conteúdo estica e encolhe.
-2. **Media Queries:** O CSS aplica regras diferentes dependendo da condição (ex: `se a largura < 600px`).
-3. **Scripts (JS):** Para interações dinâmicas e ajustes de conteúdo.
-
-### Unidades de Medida (CSS)
-Isso cai muito em questão técnica. Diferença entre fixo e relativo:
-* **PX (Pixel):** Fixo. Ruim p/ responsivo.
-* **% (Porcentagem):** Fluido.
-* **EM:** Relativo ao tamanho da fonte do elemento **pai**.
-* **REM (Root EM):** Relativo ao tamanho da fonte do elemento **raiz** (`html`). *Mais previsível e acessível.*
+### Ciclo de Comunicação
+* **Request (Solicitação):** O cliente pede um recurso (ex: digitar URL, clicar em link).
+* **Response (Resposta):** O servidor processa e devolve o HTML/JSON.
 
 ---
 
-## 3. Responsivo vs. Adaptativo
-Parecem iguais, mas a lógica interna é diferente.
+## 2. Interface e Design Responsivo
+A interface é a ponte entre o usuário e o sistema (IHC - Interação Humano-Computador).
 
-| Característica | Design Responsivo | Design Adaptativo |
-| :--- | :--- | :--- |
-| **Layout** | Fluido / Líquido | Estático (com "saltos") |
-| **Técnica** | Se ajusta pixel a pixel | Usa "Breakpoints" fixos |
-| **Flexibilidade** | Alta (qualquer tela) | Média (telas predefinidas) |
-| **Complexidade** | Mais difícil de codar | Mais trabalhoso (vários layouts) |
+### Design Responsivo
+O site se adapta **automaticamente** ao tamanho da tela, plataforma e orientação do dispositivo.
+* **Tripé Técnico:** Layouts Fluidos (unidades flexíveis) + Media Queries (CSS condicional) + Scripts.
+* **Mobile First:** Começa projetando para telas pequenas (celular) e expande para desktop (Progressive Enhancement).
 
-> **Ponto de Atenção:** No adaptativo, se a tela tiver 700px e o breakpoint for 720px, ele pode carregar o layout de 360px (perde espaço). O responsivo aproveitaria os 700px totais.
-
----
-
-## 4. Mobile First
-Abordagem de desenvolvimento moderna.
-* **Lógica:** Cria primeiro p/ celular (telas pequenas, internet lenta, toque) e depois expande p/ desktop.
-* **Progressive Enhancement:** Começa simples e adiciona recursos (melhoria progressiva).
-* **Graceful Degradation:** (Oposto/Antigo) Cria p/ desktop e vai "capando" recursos p/ funcionar no mobile.
+### Responsivo vs. Adaptativo
+* **Responsivo:** Layout fluido. Se ajusta pixel a pixel (elástico).
+* **Adaptativo:** Layouts estáticos com "pontos de quebra" fixos (ex: layout p/ 360px, layout p/ 720px). Menos flexível.
 
 ---
 
-## 5. HTML (HyperText Markup Language)
-A estrutura da página (o esqueleto/vigas). Não é programação, é **marcação**.
-* **Analogia:** HTML = Estrutura (Vigas/Paredes) | CSS = Acabamento (Pintura/Decoração).
-* **Estrutura Base:** `<!DOCTYPE html>`, `html
+## 3. Tecnologias do Lado Cliente (Frontend)
+O que roda no navegador do usuário.
+
+### HTML (Estrutura)
+Linguagem de marcação. Define o esqueleto da página.
+* **HTML5:** Foco em semântica e multimídia (áudio/vídeo nativos).
+* **Tags Semânticas:** `<header>`, `<nav>`, `<main>`, `<footer>`. Ajudam o Google (SEO) a entender o conteúdo.
+
+### CSS (Estilo)
+Controla a apresentação visual (cores, fontes, layout).
+* **Sintaxe:** `Seletor { propriedade: valor; }`
+* **Formas de Inserção:**
+    1.  **Inline:** Na tag (`style="..."`). *Evitar.*
+    2.  **Interno:** Na tag `<style>` no head.
+    3.  **Externo (Recomendado):** Arquivo `.css` separado. Facilita manutenção e cache.
+
+### JavaScript (Comportamento)
+Linguagem de programação interpretada pelo navegador. Adiciona interatividade.
+* **Função:** Manipular o HTML/CSS em tempo real (DOM), validar formulários e criar animações sem recarregar a página.
+* **Exemplo:** Clicar em um botão para acender uma lâmpada (trocar a imagem `src`).
+
+---
+
+## 4. Tecnologias do Lado Servidor (Backend)
+O que roda no servidor e o usuário não vê.
+
+### PHP (Hypertext Preprocessor)
+Linguagem de script interpretada no servidor. Gera o HTML que é enviado pro cliente.
+* **Páginas Dinâmicas:** O conteúdo muda dependendo de quem acessa (ex: "Olá, Leonardo").
+* **Integração:** Conecta o HTML ao Banco de Dados.
+* **Segurança:** O código fonte PHP nunca chega ao navegador, apenas o resultado (HTML).
+
+### Banco de Dados (SGBD)
+Onde as informações ficam salvas (MySQL, PostgreSQL).
+* **Fluxo:** HTML (Formulário) -> PHP (Processa) -> SQL (Banco) -> PHP (Formata) -> HTML (Resposta).
+
+---
+
+## Resumo p/ Revisão Rápida
+* **Cliente-Servidor:** Cliente pede (Request), Servidor processa e devolve (Response).
+* **Responsividade:** Layout fluido + Media Queries. Prefira **Mobile First**.
+* **HTML:** Estrutura semântica.
+* **CSS:** Estilo. Use arquivo externo.
+* **JS:** Interatividade no navegador.
+* **PHP:** Lógica no servidor. Gera páginas dinâmicas e acessa o banco.
