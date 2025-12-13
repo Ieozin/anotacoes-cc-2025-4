@@ -5,7 +5,7 @@
 | Disciplina | Status |
 | :--- | :---: |
 | 01 - Matemática e Lógica | 🟢 Concluído |
-| 02 - Desenvolvimento Web | 🟡 Em Andamento (Atividades) |
+| 02 - Desenvolvimento Web | 🟡 Em Andamento |
 | 03 - Banco de Dados | ⏳ A Iniciar |
 
 ---
@@ -20,14 +20,13 @@
 * [x] [Extra: Introdução a Redes](01_matematica_e_logica/anotacoes/tema_extra_introducao_redes.md)
 
 ## 📂 02. Desenvolvimento Web
-* [ ] Tema 1: Introdução (Pendente)
-* [x] [Tema 2: Ambiente Web e Tecnologias (Fullstack)](02_desenvolvimento_web/anotacoes/tema_02_ambiente_web_e_html.md)
-* [ ] Tema 3: HTML (Aprofundamento)
-* [ ] Tema 4: CSS
-* [ ] Tema 5: JavaScript
+* [x] [Temas 1 e 2: Apresentação e Ambiente Web (Fullstack)](02_desenvolvimento_web/anotacoes/tema_01_02_apresentacao_e_ambiente_web.md)
+* [x] [Tema 3: Linguagem de Marcação (HTML)](02_desenvolvimento_web/anotacoes/tema_03_html_estrutura.md)
+* [ ] Tema 4: CSS (Estilos e Layout)
+* [ ] Tema 5: JavaScript (Interatividade)
 * [ ] Tema 6: PHP (Páginas Dinâmicas)
-* [ ] Tema 7: PHP + Banco de Dados
-* [ ] Tema 8: Prepare
+* [ ] Tema 7: Integração PHP + Banco de Dados
+* [ ] Tema 8: Praticando (Estudos de Caso)
 
 ---
 *“Foco na base.”*
