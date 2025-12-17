@@ -1,95 +1,87 @@
 # **Tema 3: Linguagem de Marcação (HTML)**
 
-**Data:** 15/12/2025 | **Status:** Concluído
+**Data:** 17/12/2025 | **Status:** Concluído
 
 ## **1\. Introdução e Ferramentas**
 
 HTML (HyperText Markup Language) **não é linguagem de programação**. É uma linguagem de marcação baseada em tags.
 
-- **Objetivo:** Estruturar o conteúdo ("esqueleto" da página).
-- **Origem:** Criado por Tim Berners-Lee (1991).
-- **Ferramentas:** Editores simples (Notepad++, Nano, VS Code) são ideais para aprendizado.
+* **Objetivo:** Estruturar o conteúdo ("esqueleto" da página).  
+* **Origem:** Criado por Tim Berners-Lee (1991).  
+* **Ferramentas:** Editores simples (Notepad++, VS Code).
 
 ## **2\. O Doctype**
 
-Instrução inicial para o navegador identificar a versão do HTML. Não é uma tag.
+Instrução inicial para o navegador identificar a versão do HTML.
 
-- **HTML 5:** Simplificada: \<\!DOCTYPE html\>.
+* **HTML 5:** Simplificada: \<\!DOCTYPE html\>.
 
 ## **3\. Estrutura Hierárquica**
-
-O HTML funciona com elementos aninhados (Pai \> Filho).
 
 ### **Boilerplate (Estrutura Obrigatória)**
 
 \<\!DOCTYPE html\>  
 \<html lang="pt-br"\>  
- \<head\>  
- \<meta charset="UTF-8"\>  
- \<title\>Aba do Navegador\</title\>  
- \</head\>  
- \<body\>  
- \<h1\>Título Principal\</h1\>  
- \<p\>Um parágrafo de texto.\</p\>  
- \</body\>  
+    \<head\>  
+        \<meta charset="UTF-8"\>  
+        \<title\>Minha Página\</title\>  
+    \</head\>  
+    \<body\>  
+        \<h1\>Conteúdo aqui\</h1\>  
+    \</body\>  
 \</html\>
-
-**Ponto de Atenção:** Se remover a tag \<head\>, a página continua funcionando (o navegador corrige), mas o documento torna-se tecnicamente inválido (W3C).
 
 ## **4\. Semântica (HTML5)**
 
-Uso de tags pelo significado, não pela aparência. Essencial para SEO (Google) e Acessibilidade.
+Uso de tags pelo significado. Essencial para SEO e Acessibilidade.
 
-### **Tags Estruturais**
+* **Estruturais:** \<header\>, \<nav\>, \<main\>, \<section\>, \<article\>, \<footer\>.  
+* **Genéricas:** \<div\> (bloco), \<span\> (linha).
 
-- \<header\>: Cabeçalho.
-- \<nav\>: Menu.
-- \<main\>: Conteúdo principal.
-- \<section\>: Seção temática.
-- \<article\>: Conteúdo independente.
-- \<footer\>: Rodapé.
-- \<div\> / \<span\>: Genéricas (layout/estilo).
+## **5\. Tags de Texto e Listas**
 
-## **5\. Tags de Texto: Visual vs Semântico**
+| Tag | Função |
+| :---- | :---- |
+| \<strong\> | Negrito com semântica de importância. |
+| \<em\> | Itálico com semântica de ênfase. |
+| \<p\> | Parágrafos de texto. |
+| \<br\> | Quebra de linha simples. |
+| \<hr\> | Linha horizontal (separação temática). |
 
-| Tag Visual (Evitar) | Tag Semântica (Usar) | Efeito  | Significado Real      |
-| :------------------ | :------------------- | :------ | :-------------------- |
-| \<b\> (Bold)        | \<strong\>           | Negrito | Importância/Urgência. |
-| \<i\> (Italic)      | \<em\> (Emphasis)    | Itálico | Ênfase na entonação.  |
+### **Listas**
 
-**Raio-X da Questão (Acessibilidade):** Leitores de tela (para deficientes visuais) mudam a entonação de voz ao ler \<strong\>, dando ênfase real. A tag \<b\> é ignorada pelo leitor, servindo apenas para estética. Sempre prefira \<strong\>.
+Organizam itens.
 
-## **6\. Prática: Tags Básicas e Separadores**
+* **Não Ordenada (\<ul\>):** Marcadores (bolinhas). Itens dentro de \<li\>.  
+* **Ordenada (\<ol\>):** Números (1, 2, 3). Itens dentro de \<li\>.  
+* **Definição (\<dl\>):** Termos \<dt\> e descrições \<dd\>.
 
-Exemplo prático de estrutura com títulos, parágrafos e linha horizontal.
+## **6\. Tabelas**
 
-\<body\>  
- \<h1\>Primeiro título\</h1\>  
- \<p\>  
- Lorem ipsum dolor sit amet. Este é um parágrafo contendo texto  
- dentro da tag P, que é a semanticamente correta para blocos de texto.  
- \</p\>
+Usadas para dados tabulares, não para layout.
 
-    \<hr/\>
+* \<table\>: Container.  
+* \<tr\>: Linha (Row).  
+* \<th\>: Cabeçalho (Header) \- Negrito e centralizado.  
+* \<td\>: Dado (Data).
 
-    \<h2\>Subtítulo\</h2\>
-    \<p\>
-        Novo bloco de texto após a separação.
-    \</p\>
+## **7\. Multimídia e Links**
 
-\</body\>
+* **Imagens (\<img\>):** Tag vazia. Atributos: src (caminho), alt (texto alternativo).  
+* **Links (\<a\>):** Atributos: href (destino), target="\_blank" (nova aba).
 
-- \<hr/\>: Tag "vazia" (não tem conteúdo dentro). Serve para quebra temática visual (linha horizontal).
+## **8\. Formulários (Interação)**
 
-## **7\. Tags Obsoletas (Descontinuadas)**
+Permitem enviar dados para o servidor.
 
-Substituídas pelo CSS. Não utilizar:  
-\<center\>, \<font\>, \<applet\>, \<dir\>.
+* \<form\>: Container (action, method).  
+* \<label\>: Rótulo (melhora usabilidade).  
+* \<input\>: Campos (type="text", "email", "password", "date").  
+* \<textarea\>: Texto longo.  
+* \<button\>: Botão de envio.
 
-# **Resumo p/ Revisão Rápida**
+### **Validação Nativa**
 
-- HTML \= Estrutura | CSS \= Estilo.
-- Hierarquia: \<html\> \> \<head\> \> \<body\>.
-- Semântica: Priorizar \<strong\> em vez de \<b\> para garantir acessibilidade em leitores de tela.
-- Tags de Bloco: \<h1\>, \<p\>, \<hr\>, \<div\> (Ocupam a largura toda).
-- Atributos Globais: id (único) e class (grupo).
+* required: Campo obrigatório.  
+* placeholder: Dica visual.  
+* min / max: Limites numéricos.
