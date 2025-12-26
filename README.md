@@ -5,7 +5,7 @@
 | Disciplina | Status |
 | :--- | :---: |
 | 01 - Matemática e Lógica | 🟢 Concluído |
-| 02 - Desenvolvimento Web | 🟡 Em Andamento |
+| 02 - Desenvolvimento Web | 🟢 Concluído |
 | 03 - Banco de Dados | ⏳ A Iniciar |
 
 ---
@@ -22,11 +22,11 @@
 ## 📂 02. Desenvolvimento Web
 * [x] [Temas 1 e 2: Apresentação e Ambiente Web (Fullstack)](02_desenvolvimento_web/anotacoes/tema_01_02_apresentacao_e_ambiente_web.md)
 * [x] [Tema 3: Linguagem de Marcação (HTML)](02_desenvolvimento_web/anotacoes/tema_03_html_estrutura.md)
-* [ ] Tema 4: CSS (Estilos e Layout)
-* [ ] Tema 5: JavaScript (Interatividade)
-* [ ] Tema 6: PHP (Páginas Dinâmicas)
-* [ ] Tema 7: Integração PHP + Banco de Dados
-* [ ] Tema 8: Praticando (Estudos de Caso)
+* [x] [Tema 4: Linguagem de Marcação e Estilos (CSS)](02_desenvolvimento_web/anotacoes/tema_04_css_estilos.md)
+* [x] [Tema 5: Linguagem Javascript](02_desenvolvimento_web/anotacoes/tema_05_javascript.md)
+* [x] [Tema 6: Programação de Páginas Dinâmicas com PHP](02_desenvolvimento_web/anotacoes/tema_06_php_basico.md)
+* [x] [Tema 7: Integração do PHP com Banco de Dados](02_desenvolvimento_web/anotacoes/tema_07_php_banco_dados.md)
+* [x] [Tema 8: Praticando e Revisão Final](02_desenvolvimento_web/anotacoes/tema_08_pratica_revisao.md)
 
 ---
 *“Foco na base.”*
