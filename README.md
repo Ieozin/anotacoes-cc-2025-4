@@ -31,7 +31,6 @@
 ## 📂 03. Banco de Dados
 * [x] [Temas 1 e 2: Apresentação e Fundamentos (SGBD)](03_banco_de_dados/anotacoes/tema_01_02_introducao_e_sgbd.md)
 * [x] [Tema 3: Modelagem Conceitual e DER](03_banco_de_dados/anotacoes/tema_03_modelagem_conceitual.md)
-* [x] [Exercícios: Fase Inicial](03_banco_de_dados/anotacoes/exercicios_fase_inicial.md)
 
 ---
 *“Foco na base.”*
