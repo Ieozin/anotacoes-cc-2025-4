@@ -32,6 +32,7 @@
 * [x] [Temas 1 e 2: Apresentação e Fundamentos (SGBD)](03_banco_de_dados/anotacoes/tema_01_02_introducao_e_sgbd.md)
 * [x] [Tema 3: Modelagem Conceitual e DER](03_banco_de_dados/anotacoes/tema_03_modelagem_conceitual.md)
 * [x] [Tema 4: Modelagem Lógica e Física (Normalização)](03_banco_de_dados/anotacoes/tema_04_modelagem_logica_fisica.md)
+* [x] [Tema 5: Criação e Manipulação de Objetos (DDL/DML)](03_banco_de_dados/anotacoes/tema_05_criacao_manipulacao_postgresql.md)
 
 ---
 *“Foco na base.”*
