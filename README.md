@@ -33,6 +33,7 @@
 * [x] [Tema 3: Modelagem Conceitual e DER](03_banco_de_dados/anotacoes/tema_03_modelagem_conceitual.md)
 * [x] [Tema 4: Modelagem Lógica e Física (Normalização)](03_banco_de_dados/anotacoes/tema_04_modelagem_logica_fisica.md)
 * [x] [Tema 5: Criação e Manipulação de Objetos (DDL/DML)](03_banco_de_dados/anotacoes/tema_05_criacao_manipulacao_postgresql.md)
+* [x] [Tema 6: Consultas Simples (SELECT, WHERE, GROUP BY)](03_banco_de_dados/anotacoes/tema_06_consultas_uma_tabela.md)
 
 ---
 *“Foco na base.”*
