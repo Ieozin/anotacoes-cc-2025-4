@@ -6,7 +6,7 @@
 | :--- | :---: |
 | 01 - Matemática e Lógica | 🟢 Concluído |
 | 02 - Desenvolvimento Web | 🟢 Concluído |
-| 03 - Banco de Dados | 🟡 Em Andamento |
+| 03 - Banco de Dados      | 🟢 Concluído|
 
 ---
 
