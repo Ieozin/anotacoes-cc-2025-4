@@ -39,6 +39,7 @@
 
 ## 📂 04. Arquitetura de Computadores
 * [x] [Temas 1 e 2: Apresentação e Base Computacional](04_arquitetura_computadores/anotacoes/tema_01_02_base_computacional.md)
+* [x] [Tema 3: Componentes de Hardware](04_arquitetura_computadores/anotacoes/tema_03_componentes_hardware.md)
 
 ---
 *“Foco na base.”*
