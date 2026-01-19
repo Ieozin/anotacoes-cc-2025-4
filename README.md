@@ -42,6 +42,7 @@
 * [x] [Tema 3: Componentes de Hardware](04_arquitetura_computadores/anotacoes/tema_03_componentes_hardware.md)
 * [x] [Tema 4: Representação de Dados (Binário e Hexa)](04_arquitetura_computadores/anotacoes/tema_04_representacao_dados.md)
 * [x] [Tema 5: Lógica Digital (Portas e Circuitos)](04_arquitetura_computadores/anotacoes/tema_05_logica_digital.md)
+* [x] [Tema 6: Processamento em Paralelo (Multicore)](04_arquitetura_computadores/anotacoes/tema_06_processamento_paralelo.md)
 
 --
 *“Foco na base.”*
