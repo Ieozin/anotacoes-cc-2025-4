@@ -7,7 +7,8 @@
 | 01 - Matemática e Lógica | 🟢 Concluído |
 | 02 - Desenvolvimento Web | 🟢 Concluído |
 | 03 - Banco de Dados      | 🟢 Concluído |
-| 04 - Arquitetura de Computadores | 🟡 Em Andamento |
+| 04 - Arquitetura de Computadores | 🟢 Concluído |
+| 05 - Paradigmas (Python) | 🟡 Em Andamento |
 
 ---
 
@@ -44,6 +45,9 @@
 * [x] [Tema 5: Lógica Digital (Portas e Circuitos)](04_arquitetura_computadores/anotacoes/tema_05_logica_digital.md)
 * [x] [Tema 6: Processamento em Paralelo (Multicore)](04_arquitetura_computadores/anotacoes/tema_06_processamento_paralelo.md)
 * [x] [Tema 7: Arquitetura CISC x RISC](04_arquitetura_computadores/anotacoes/tema_07_cisc_risc.md)
+
+## 📂 05. Paradigmas de Linguagem (Python)
+* [x] [Temas 1 e 2: Apresentação e Conceitos de Paradigmas](05_paradigmas_python/anotacoes/tema_01_02_paradigmas_python.md)
 
 --
 *“Foco na base.”*
