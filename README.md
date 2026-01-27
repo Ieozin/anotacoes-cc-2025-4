@@ -48,6 +48,7 @@
 
 ## 📂 05. Paradigmas de Linguagem (Python)
 * [x] [Temas 1 e 2: Apresentação e Conceitos de Paradigmas](05_paradigmas_python/anotacoes/tema_01_02_paradigmas_python.md)
+* [x] [Tema 3: Python Básico (Variáveis e Tipos)](05_paradigmas_python/anotacoes/tema_03_python_basico.md)
 
---
+---
 *“Foco na base.”*
