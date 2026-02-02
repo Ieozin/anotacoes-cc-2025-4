@@ -19,7 +19,7 @@
 * [x] [Tema 5: Cálculo Proposicional](01_matematica_e_logica/anotacoes/tema_05_calculo_proposicional.md)
 * [x] [Tema 6: Cálculo de Predicados](01_matematica_e_logica/anotacoes/tema_06_calculo_predicados.md)
 * [x] [Tema 7: Métodos de Demonstração](01_matematica_e_logica/anotacoes/tema_07_metodos_demonstracao.md)
-* [x] [Extra: Introdução a Redes](01_matematica_e_logica/anotacoes/tema_extra_introducao_redes.md)
+* [x] [Tema 8: Revisão e Preparação](01_matematica_e_logica/anotacoes/tema_08_revisao_prova.md)
 
 ## 📂 02. Desenvolvimento Web
 * [x] [Temas 1 e 2: Apresentação e Ambiente Web (Fullstack)](02_desenvolvimento_web/anotacoes/tema_01_02_apresentacao_e_ambiente_web.md)
