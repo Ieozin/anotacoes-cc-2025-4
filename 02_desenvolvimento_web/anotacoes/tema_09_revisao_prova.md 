@@ -1,0 +1,19 @@
+# Tema 9: Revisão Geral e Preparação para Prova
+**Status:** Concluído
+
+## 1. O Ecossistema Web
+A revisão aborda a integração das quatro tecnologias fundamentais para o desenvolvimento web moderno.
+
+### O Papel de Cada Tecnologia
+*   **HTML5:** A estrutura semântica (o esqueleto). Foco em acessibilidade e organização.
+*   **CSS3:** A apresentação visual (a pele/roupa). Responsividade e layout.
+*   **JavaScript:** O comportamento e interatividade no lado do cliente (os músculos).
+*   **PHP:** A lógica de negócio no servidor e comunicação com o banco de dados (o cérebro).
+
+## 2. Pontos Importantes da Revisão
+*   **GitHub:** Ferramenta essencial não só para versionamento, mas como portfólio profissional.
+*   **Inteligência Artificial:** O uso de ferramentas como ChatGPT está transformando a produtividade, mas o fundamento (lógica de programação) continua sendo o diferencial do profissional.
+
+## 3. Dicas de Carreira
+*   Construa projetos reais e coloque no GitHub.
+*   Entenda o fluxo completo (Fullstack): Requisição -> Servidor -> Banco -> Resposta.

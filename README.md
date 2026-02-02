@@ -29,6 +29,7 @@
 * [x] [Tema 6: Programação de Páginas Dinâmicas com PHP](02_desenvolvimento_web/anotacoes/tema_06_php_basico.md)
 * [x] [Tema 7: Integração do PHP com Banco de Dados](02_desenvolvimento_web/anotacoes/tema_07_php_banco_dados.md)
 * [x] [Tema 8: Praticando e Revisão Final](02_desenvolvimento_web/anotacoes/tema_08_pratica_revisao.md)
+* [x] [Tema 9: Revisão para Prova (Vídeo)](02_desenvolvimento_web/anotacoes/tema_09_revisao_prova.md)
 
 ## 📂 03. Banco de Dados
 * [x] [Temas 1 e 2: Apresentação e Fundamentos (SGBD)](03_banco_de_dados/anotacoes/tema_01_02_introducao_e_sgbd.md)
