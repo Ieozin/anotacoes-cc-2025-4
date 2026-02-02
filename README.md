@@ -8,7 +8,7 @@
 | 02 - Desenvolvimento Web | 🟢 Concluído |
 | 03 - Banco de Dados      | 🟢 Concluído |
 | 04 - Arquitetura de Computadores | 🟢 Concluído |
-| 05 - Paradigmas (Python) | 🟡 Em Andamento |
+| 05 - Paradigmas (Python) | 🟢 Concluído |
 
 ---
 
@@ -47,9 +47,9 @@
 * [x] [Tema 7: Arquitetura CISC x RISC](04_arquitetura_computadores/anotacoes/tema_07_cisc_risc.md)
 
 ## 📂 05. Paradigmas de Linguagem (Python)
-* [x] [Temas 1 e 2: Apresentação e Conceitos de Paradigmas](05_paradigmas_python/anotacoes/tema_01_02_paradigmas_python.md)
+* [x] [Temas 1 e 2: Apresentação e Paradigmas](05_paradigmas_python/anotacoes/tema_01_02_paradigmas_python.md)
 * [x] [Tema 3: Python Básico (Variáveis e Tipos)](05_paradigmas_python/anotacoes/tema_03_python_basico.md)
-* [x] [Tema 4: Python Estruturado](05_paradigmas_python/anotacoes/tema_04_python_estruturado.md)
+* [x] [Tema 4: Python Estruturado (Loops e Funções)](05_paradigmas_python/anotacoes/tema_04_python_estruturado.md)
 * [x] [Tema 5 e 6: Python Orientado a Objetos e Revisão](05_paradigmas_python/anotacoes/tema_05_06_python_oo_e_revisao.md)
 
 ---
