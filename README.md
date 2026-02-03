@@ -38,6 +38,7 @@
 * [x] [Tema 5: Criação e Manipulação de Objetos (DDL/DML)](03_banco_de_dados/anotacoes/tema_05_criacao_manipulacao_postgresql.md)
 * [x] [Tema 6: Consultas Simples (SELECT, WHERE, GROUP BY)](03_banco_de_dados/anotacoes/tema_06_consultas_uma_tabela.md)
 * [x] [Tema 7: Consultas com Várias Tabelas (JOINs)](03_banco_de_dados/anotacoes/tema_07_consultas_varias_tabelas.md)
+* [x] Tema 08: Laboratório Prático - Otimização e Resolução de Problemas (03_banco_de_dados/anotacoes/tema_08_lab_pratico_otimizacao.md)
 
 ## 📂 04. Arquitetura de Computadores
 * [x] [Temas 1 e 2: Apresentação e Base Computacional](04_arquitetura_computadores/anotacoes/tema_01_02_base_computacional.md)
